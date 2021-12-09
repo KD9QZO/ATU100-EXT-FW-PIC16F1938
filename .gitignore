@@ -46,3 +46,8 @@ _ReSharper*/
 # Nuget packages folder
 
 packages/
+
+
+# MPLAB X IDE & Netbeans IDE
+
+/build/
