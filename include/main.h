@@ -530,7 +530,7 @@ void sub_tune() {
 		return;
 	}
 
-	if (SWR < 200 && SWR < swr_mem && (swr_mem - SWR) > 100) {
+	if ((SWR < 200) && (SWR < swr_mem) && ((swr_mem - SWR) > 100)) {
 		return;
 	}
 
@@ -554,26 +554,43 @@ void sub_tune() {
 	}
 
 	coarse_tune();
+
 	if (SWR == 0) {
 		atu_reset();
 		return;
 	}
+
 	get_swr();
-	if (SWR < 120) return;
+
+	if (SWR < 120) {
+		return;
+	}
+
 	sharp_ind();
+
 	if (SWR == 0) {
 		atu_reset();
 		return;
 	}
+
 	get_swr();
-	if (SWR < 120) return;
+
+	if (SWR < 120) {
+		return;
+	}
+
 	sharp_cap();
+
 	if (SWR == 0) {
 		atu_reset();
 		return;
 	}
+
 	get_swr();
-	if (SWR < 120) return;
+
+	if (SWR < 120) {
+		return;
+	}
 
 	if (SWR > swr_mem) {
 		if (SW == 1) {
@@ -581,11 +598,12 @@ void sub_tune() {
 		} else {
 			SW = 1;
 		}
+
 		set_sw(SW);
-		ind = ind_mem;
-		cap = cap_mem;
-		set_ind(ind);
-		set_cap(cap);
+		ind.byte = ind_mem;
+		cap.byte = cap_mem;
+		set_ind(ind.byte);
+		set_cap(cap.byte);
 		SWR = swr_mem;
 	}
 
@@ -596,7 +614,10 @@ void sub_tune() {
 
 void tune() {
 #if 0
-	int swr_mem, ind_mem, cap_mem, sw_mem;
+	int swr_mem;
+	int ind_mem;
+	int cap_mem;
+	int sw_mem;
 #endif
 	CLEAR_WDT();
 
