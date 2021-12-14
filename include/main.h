@@ -11,16 +11,19 @@
 
 #include "extratypes.h"
 #include "preprocessor.h"
+#include "common.h"
 
+#include "eeprom_map.h"
 #include "pic_init.h"
 
 // Main.h
 // David Fainitski
 // ATU-100 project 2016
 
-//
-static char ind = 0;
-static char cap = 0;
+
+extern bit_byte_t ind;
+extern bit_byte_t cap;
+
 static char SW = 0;
 static char step_cap = 0;
 static char step_ind = 0;
@@ -84,26 +87,42 @@ void sub_tune(void);
 /* ================================================================================================================== */
 
 int correction(int input) {
-	//
-	if (input <= 80) return 0;
-	if (input <= 171) input += 244;
-	else if (input <= 328) input += 254;
-	else if (input <= 582) input += 280;
-	else if (input <= 820) input += 297;
-	else if (input <= 1100) input += 310;
-	else if (input <= 2181) input += 430;
-	else if (input <= 3322) input += 484;
-	else if (input <= 4623) input += 530;
-	else if (input <= 5862) input += 648;
-	else if (input <= 7146) input += 743;
-	else if (input <= 8502) input += 800;
-	else if (input <= 10500) input += 840;
-	else input += 860;
-	//
+	if (input <= 80) {
+		return 0;
+	}
+
+	if (input <= 171) {
+		input += 244;
+	} else if (input <= 328) {
+		input += 254;
+	} else if (input <= 582) {
+		input += 280;
+	} else if (input <= 820) {
+		input += 297;
+	} else if (input <= 1100) {
+		input += 310;
+	} else if (input <= 2181) {
+		input += 430;
+	} else if (input <= 3322) {
+		input += 484;
+	} else if (input <= 4623) {
+		input += 530;
+	} else if (input <= 5862) {
+		input += 648;
+	} else if (input <= 7146) {
+		input += 743;
+	} else if (input <= 8502) {
+		input += 800;
+	} else if (input <= 10500) {
+		input += 840;
+	} else {
+		input += 860;
+	}
+
 	return input;
 }
 
-//
+
 
 int get_reverse() {
 	int Reverse;
@@ -120,7 +139,7 @@ int get_reverse() {
 	Reverse = ADC_Get_Sample(0);
 	return Reverse * 4;
 }
-//
+
 
 int get_forward() {
 	int Forward;
@@ -149,26 +168,26 @@ int get_forward() {
 void get_pwr() {
 	long Forward, Reverse;
 	float p;
-	asm("CLRWDT");
-	//
+	CLEAR_WDT();
+
 	Forward = get_forward();
 	Reverse = get_reverse();
 	if (D_correction == 1) p = correction(Forward * 3);
 	else p = Forward * 3;
-	//
+
 	if (Reverse >= Forward)
 		Forward = 999;
 	else {
 		Forward = ((Forward + Reverse) * 100) / (Forward - Reverse);
 		if (Forward > 999) Forward = 999;
 	}
-	//
+
 	p = p * K_Mult / 1000.0; // mV to Volts on Input
 	p = p / 1.414;
 	if (P_High == 1) p = p * p / 50; // 0 - 1500 ( 1500 Watts)
 	else p = p * p / 5; // 0 - 1510 (151.0 Watts)
 	p = p + 0.5; // rounding
-	//
+
 	PWR = p;
 	if (Forward < 100) SWR = 999;
 	else SWR = Forward;
@@ -186,7 +205,7 @@ void get_swr() {
 		P_max = 0;
 	}
 	while (PWR < min_for_start | (PWR > max_for_start & max_for_start > 0)) { // waiting for good power
-		asm("CLRWDT");
+		CLEAR_WDT();
 		get_pwr();
 		if (p_cnt != 100) {
 			p_cnt += 1;
@@ -196,7 +215,7 @@ void get_swr() {
 			show_pwr(P_max, SWR);
 			P_max = 0;
 		}
-		//
+
 		if (Button(&PORTB, 0, 5, 1)) rready = 1;
 		if (rready == 1 & Button(&PORTB, 0, 5, 0)) { //  press button  Tune
 			show_reset();
@@ -220,7 +239,6 @@ void set_ind(uint8_t Ind) {
 		Ind_1 = bbInd.B4;
 		Ind_22 = bbInd.B5;
 		Ind_45 = bbInd.B6;
-		//
 	} else {
 		Ind_005 = ~bbInd.B0;
 		Ind_011 = ~bbInd.B1;
@@ -229,8 +247,8 @@ void set_ind(uint8_t Ind) {
 		Ind_1 = ~bbInd.B4;
 		Ind_22 = ~bbInd.B5;
 		Ind_45 = ~bbInd.B6;
-		//
 	}
+
 	Vdelay_ms(Rel_Del);
 }
 
@@ -250,16 +268,25 @@ void set_cap(uint8_t Cap) {
 	Vdelay_ms(Rel_Del);
 }
 
+/**
+ * \brief Set the state of the switch
+ *
+ * This sets the state (direction) of the switch (relay) used to measure forward/reverse power and SWR.
+ *
+ * \param[in]	SW	The desired direction: \n
+ *					- \b 0 -- IN
+ *					- \b 1 -- OUT
+ */
 void set_sw(char SW) { // 0 - IN,  1 - OUT
 	Cap_sw = SW;
 	Vdelay_ms(Rel_Del);
 }
 
 void atu_reset() {
-	ind = 0;
-	cap = 0;
-	set_ind(ind);
-	set_cap(cap);
+	ind.byte = 0;
+	cap.byte = 0;
+	set_ind(ind.byte);
+	set_cap(cap.byte);
 	Vdelay_ms(Rel_Del);
 }
 
@@ -268,30 +295,43 @@ void coarse_cap() {
 	char count;
 	int min_swr;
 
-	cap = 0;
-	set_cap(cap);
+	cap.byte = 0;
+	set_cap(cap.byte);
 	step_cap = step;
 	get_swr();
-	if (SWR == 0) return;
+	if (SWR == 0) {
+		return;
+	}
+
 	min_swr = SWR + SWR / 20;
 	for (count = step; count <= 31;) {
 		set_cap(count * C_mult);
 		get_swr();
-		if (SWR == 0) return;
+		if (SWR == 0) {
+			return;
+		}
+
 		if (SWR < min_swr) {
 			min_swr = SWR + SWR / 20;
-			cap = count*C_mult;
+			cap.byte = count * C_mult;
 			step_cap = step;
-			if (SWR < 120) break;
+			if (SWR < 120) {
+				break;
+			}
 			count += step;
-			if (C_linear == 0 & count == 9) count = 8;
-			else if (C_linear == 0 & count == 17) {
+			if ((C_linear == 0) && (count == 9)) {
+				count = 8;
+			} else if ((C_linear == 0) && (count == 17)) {
 				count = 16;
 				step = 4;
 			}
-		} else break;
+		} else {
+			break;
+		}
 	}
-	set_cap(cap);
+
+	set_cap(cap.byte);
+
 	return;
 }
 
@@ -334,26 +374,28 @@ void coarse_tune() {
 }
 
 void sharp_cap() {
-	char range, count, max_range, min_range;
+	uint8_t range;
+	uint8_t count;
+	uint8_t max_range;
+	uint8_t min_range;
 	int min_SWR;
-	bit_byte_t bb_cap, bb_count;
 
 	range = step_cap * C_mult;
 
-	max_range = cap + range;
+	max_range = cap.byte + range;
 
 	if (max_range > 32 * C_mult - 1) {
 		max_range = 32 * C_mult - 1;
 	}
-	if (cap > range) {
-		min_range = cap - range;
+
+	if (cap.byte > range) {
+		min_range = cap.byte - range;
 	} else {
 		min_range = 0;
 	}
 
-	cap = min_range;
-	bb_cap.byte = cap;
-	set_cap(bb_cap);
+	cap.byte = min_range;
+	set_cap(cap.byte);
 	get_swr();
 
 	if (SWR == 0) {
@@ -363,69 +405,105 @@ void sharp_cap() {
 	min_SWR = SWR;
 
 	for (count = min_range + C_mult; count <= max_range; count += C_mult) {
-		bb_count.byte = count;
-		set_cap(bb_count);
+		set_cap(count);
 		get_swr();
-		if (SWR == 0) return;
+		if (SWR == 0) {
+			return;
+		}
+
 		if (SWR >= min_SWR) {
 			Delay_ms(10);
 			get_swr();
 		}
+
 		if (SWR >= min_SWR) {
 			Delay_ms(10);
 			get_swr();
 		}
+
 		if (SWR < min_SWR) {
 			min_SWR = SWR;
-			cap = count;
-			if (SWR < 120) break;
-		} else break;
+			cap.byte = count;
+			if (SWR < 120) {
+				break;
+			}
+		} else {
+			break;
+		}
 	}
-	bb_cap.byte = cap;
-	set_cap(bb_cap);
+
+	set_cap(cap.byte);
 
 	return;
 }
 
 void sharp_ind() {
-	char range, count, max_range, min_range;
+	uint8_t range;
+	uint8_t count;
+	uint8_t max_range;
+	uint8_t min_range;
 	int min_SWR;
+
 	range = step_ind * L_mult;
-	//
-	max_range = ind + range;
-	if (max_range > 32 * L_mult - 1) max_range = 32 * L_mult - 1;
-	if (ind > range) min_range = ind - range;
-	else min_range = 0;
-	ind = min_range;
-	set_ind(ind);
+
+	max_range = ind.byte + range;
+
+	if (max_range > 32 * L_mult - 1) {
+		max_range = 32 * L_mult - 1;
+	}
+
+	if (ind.byte > range) {
+		min_range = ind.byte - range;
+	} else {
+		min_range = 0;
+	}
+
+	ind.byte = min_range;
+	set_ind(ind.byte);
 	get_swr();
-	if (SWR == 0) return;
+
+	if (SWR == 0) {
+		return;
+	}
+
 	min_SWR = SWR;
 	for (count = min_range + L_mult; count <= max_range; count += L_mult) {
 		set_ind(count);
 		get_swr();
-		if (SWR == 0) return;
+
+		if (SWR == 0) {
+			return;
+		}
+
 		if (SWR >= min_SWR) {
 			Delay_ms(10);
 			get_swr();
 		}
+
 		if (SWR >= min_SWR) {
 			Delay_ms(10);
 			get_swr();
 		}
+
 		if (SWR < min_SWR) {
 			min_SWR = SWR;
-			ind = count;
-			if (SWR < 120) break;
-		} else break;
+			ind.byte = count;
+			if (SWR < 120) {
+				break;
+			}
+		} else {
+			break;
+		}
 	}
-	set_ind(ind);
+
+	set_ind(ind.byte);
+
 	return;
 }
 
 void sub_tune() {
 	int swr_mem, ind_mem, cap_mem;
-	//
+
 	swr_mem = SWR;
 	coarse_tune();
 	if (SWR == 0) {
@@ -447,21 +525,34 @@ void sub_tune() {
 		return;
 	}
 	get_swr();
-	if (SWR < 120) return;
-	//
-	if (SWR < 200 & SWR < swr_mem & (swr_mem - SWR) > 100) return;
+
+	if (SWR < 120) {
+		return;
+	}
+
+	if (SWR < 200 && SWR < swr_mem && (swr_mem - SWR) > 100) {
+		return;
+	}
+
 	swr_mem = SWR;
-	ind_mem = ind;
-	cap_mem = cap;
-	//
-	if (SW == 1) SW = 0;
-	else SW = 1;
+	ind_mem = ind.byte;
+	cap_mem = cap.byte;
+
+	if (SW == 1) {
+		SW = 0;
+	} else {
+		SW = 1;
+	}
+
 	atu_reset();
 	set_sw(SW);
 	Delay_ms(50);
 	get_swr();
-	if (SWR < 120) return;
-	//
+
+	if (SWR < 120) {
+		return;
+	}
+
 	coarse_tune();
 	if (SWR == 0) {
 		atu_reset();
@@ -483,10 +574,13 @@ void sub_tune() {
 	}
 	get_swr();
 	if (SWR < 120) return;
-	//
+
 	if (SWR > swr_mem) {
-		if (SW == 1) SW = 0;
-		else SW = 1;
+		if (SW == 1) {
+			SW = 0;
+		} else {
+			SW = 1;
+		}
 		set_sw(SW);
 		ind = ind_mem;
 		cap = cap_mem;
@@ -494,55 +588,95 @@ void sub_tune() {
 		set_cap(cap);
 		SWR = swr_mem;
 	}
-	//
-	asm("CLRWDT");
+
+	CLEAR_WDT();
+
 	return;
 }
 
 void tune() {
-	//int swr_mem, ind_mem, cap_mem, sw_mem;
-	asm("CLRWDT");
-	//
+#if 0
+	int swr_mem, ind_mem, cap_mem, sw_mem;
+#endif
+	CLEAR_WDT();
+
 	p_cnt = 0;
 	P_max = 0;
-	//
+
 	rready = 0;
 	get_swr();
-	if (SWR < 110) return;
+
+	if (SWR < 110) {
+		return;
+	}
+
 	atu_reset();
-	if (Loss_ind == 0) lcd_ind();
+
+	if (Loss_ind == 0) {
+		lcd_ind();
+	}
+
 	Delay_ms(50);
 	get_swr();
 	swr_a = SWR;
-	if (SWR < 110) return;
-	if (max_swr > 110 & SWR > max_swr) return;
-	//
+
+	if (SWR < 110) {
+		return;
+	}
+
+	if ((max_swr > 110) && (SWR > max_swr)) {
+		return;
+	}
+
 	sub_tune();
+
 	if (SWR == 0) {
 		atu_reset();
 		return;
 	}
-	if (SWR < 120) return;
-	if (C_q == 5 & L_q == 5) return;
+
+	if (SWR < 120) {
+		return;
+	}
+
+	if ((C_q == 5) && (L_q == 5)) {
+		return;
+	}
 
 	if (L_q > 5) {
 		step_ind = L_mult;
 		L_mult = 1;
 		sharp_ind();
 	}
-	if (SWR < 120) return;
+
+	if (SWR < 120) {
+		return;
+	}
+
 	if (C_q > 5) {
 		step_cap = C_mult; // = C_mult
 		C_mult = 1;
 		sharp_cap();
 	}
-	if (L_q == 5)L_mult = 1;
-	else if (L_q == 6) L_mult = 2;
-	else if (L_q == 7) L_mult = 4;
-	if (C_q == 5) C_mult = 1;
-	else if (C_q == 6) C_mult = 2;
-	else if (C_q == 7) C_mult = 4;
-	asm("CLRWDT");
+
+	if (L_q == 5) {
+		L_mult = 1;
+	} else if (L_q == 6) {
+		L_mult = 2;
+	} else if (L_q == 7) {
+		L_mult = 4;
+	}
+
+	if (C_q == 5) {
+		C_mult = 1;
+	} else if (C_q == 6) {
+		C_mult = 2;
+	} else if (C_q == 7) {
+		C_mult = 4;
+	}
+
+	CLEAR_WDT();
+
 	return;
 }
 

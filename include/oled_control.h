@@ -12,6 +12,10 @@
 
 #include "extratypes.h"
 #include "preprocessor.h"
+#include "common.h"
+
+#include "eeprom_map.h"
+
 
 
 // Software I2C connections

@@ -15,6 +15,11 @@
 #include <stdint.h>
 #include <stdlib.h>
 
+#include "eeprom_map.h"
+#include "preprocessor.h"
+#include "common.h"
+
+
 #ifdef	__cplusplus
 extern "C" {
 #endif

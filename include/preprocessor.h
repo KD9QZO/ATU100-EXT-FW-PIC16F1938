@@ -36,6 +36,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 
+#include "common.h"
 
 // TODO Insert appropriate #include <>
 

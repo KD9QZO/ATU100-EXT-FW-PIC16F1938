@@ -11,6 +11,10 @@
 
 #include "extratypes.h"
 #include "preprocessor.h"
+#include "common.h"
+
+#include "eeprom_map.h"
+
 
 static const char font5x8[] = {
 	0x00, 0x00, 0x00, 0x00, 0x00, // (space)
@@ -110,6 +114,6 @@ static const char font5x8[] = {
 	0x08, 0x08, 0x2A, 0x1C, 0x08, // ->
 	0x08, 0x1C, 0x2A, 0x08, 0x08 // <-
 };
-//
+
 
 #endif	/* !FONT5X8_H_ */

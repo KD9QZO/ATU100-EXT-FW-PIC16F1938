@@ -11,7 +11,9 @@
 #include "extratypes.h"
 #include "preprocessor.h"
 
+#include "eeprom_map.h"
 #include "oled_control.h"
+#include "common.h"
 
 #include "font5x8.h"
 
@@ -27,11 +29,22 @@ void led_send(char nible) {
 	sdata = sdata + nible;
 	sdata = (sdata << 4);
 
-	if (LED) sdata = sdata + 8;
-	if (E) sdata = sdata + 4;
-	if (RW) sdata = sdata + 2;
-	if (RS) sdata = sdata + 1;
-	//
+	if (LED) {
+		sdata = sdata + 8;
+	}
+
+	if (E) {
+		sdata = sdata + 4;
+	}
+
+	if (RW) {
+		sdata = sdata + 2;
+	}
+
+	if (RS) {
+		sdata = sdata + 1;
+	}
+
 	Soft_I2C_Start();
 	Soft_I2C_Write(led_addr); // device addres
 	Soft_I2C_Write(sdata); //
@@ -44,7 +57,7 @@ void led_send(char nible) {
 	Soft_I2C_Stop();
 	delay_ms(1);
 }
-//
+
 
 void led_init(void) {
 	shift_line = EEPROM_read(7);
@@ -53,27 +66,27 @@ void led_init(void) {
 	else if (led_type == 1) { //       1602 LCD display init
 		LED = 1;
 		RS = 0; // Command
-		//
+
 		led_send(3);
 		delay_ms(5);
 		led_send(3);
 		delay_ms(1);
 		led_send(3);
 		led_send(2);
-		//
+
 		led_send(2);
 		led_send(8); //
-		//
+
 		led_send(0);
 		led_send(8); // LCD OFF
-		//
+
 		led_send(0);
 		led_send(1); // LCD clear
 		delay_ms(5);
-		//
+
 		led_send(0);
 		led_send(4 + 2); // I/D, S
-		//
+
 		led_send(0);
 		led_send(8 + 4 + 0 + 0); // LCD ON, Cursor, Blink Cursor
 	}
@@ -105,113 +118,113 @@ void oled_init(void) { // OLED init
 	Soft_I2C_Write(led_addr); // device addres
 	Soft_I2C_Write(0); // 0 - continious mode, command; 64 - Co, data
 	Soft_I2C_Write(0xAE); // display OFF
-	//
+
 	if (led_type == 2 | led_type == 3) { // 128*32 OLED
 		Soft_I2C_Write(0xD5); // clock division
 		Soft_I2C_Write(0x80); // ratio
-		//
+
 		Soft_I2C_Write(0xA8); //  multiplexer
 		Soft_I2C_Write(0x3f); //
-		//
+
 		Soft_I2C_Write(0xD3); //  offset
 		if (led_type == 2) Soft_I2C_Write(0 + shift_line); // column shift
 		else Soft_I2C_Write(31 + shift_line); // column shift
-		//
+
 		Soft_I2C_Write(0x40); // set line, line = 0
-		//
+
 		Soft_I2C_Write(0x8D); //  charge pump
 		Soft_I2C_Write(0x14); //  0x10 - external, 0x14 - internal
-		//
+
 		Soft_I2C_Write(0x81); //  contrast
 		Soft_I2C_Write(180); //   0-255
-		//
+
 		Soft_I2C_Write(0xD9); //  pre-charge
 		Soft_I2C_Write(0x22); //  0x22 - external, 0xF1 - internal
-		//
+
 		Soft_I2C_Write(0x20); //  memory addressing mode
 		Soft_I2C_Write(0x02); //  page addressing mode
-		//
+
 		Soft_I2C_Write(0x21); // set column range
 		Soft_I2C_Write(0); // column start
 		Soft_I2C_Write(127); // column stop
-		//
+
 		Soft_I2C_Write(0x2E); //  stop scrolling
-		//
+
 		if (led_type == 2) {
 			Soft_I2C_Write(0xA0); //  segment re-map, A0 - normal, A1 - remapped
-			//
+
 			Soft_I2C_Write(0xC0); // scan direction, C0 - normal, C8 - remapped
 		} else {
 			Soft_I2C_Write(0xA1); //  segment re-map, A0 - normal, A1 - remapped
-			//
+
 			Soft_I2C_Write(0xC8); // scan direction, C0 - normal, C8 - remapped
 		}
-		//
+
 		Soft_I2C_Write(0xDA); //  COM pins configure
 		Soft_I2C_Write(0x02); // 12 for x64
-		//
+
 		Soft_I2C_Write(0xDB); //  V-COM detect
 		Soft_I2C_Write(0x40); //
-		//
+
 	} else { // 128*64 OLED
 		Soft_I2C_Write(0xD5); // clock division
 		Soft_I2C_Write(0x80); // ratio
-		//
+
 		Soft_I2C_Write(0xA8); //  multiplexer
 		Soft_I2C_Write(63); //
-		//
+
 		Soft_I2C_Write(0xD3); //  offset
 		Soft_I2C_Write(shift_line); // no offset for x64 !
-		//
+
 		Soft_I2C_Write(0x40); // set line, line = 0
-		//
+
 		Soft_I2C_Write(0x8D); //  charge pump
 		Soft_I2C_Write(0x14); //  0x10 - external, 0x14 - internal
-		//
+
 		Soft_I2C_Write(0x81); //  contrast
 		Soft_I2C_Write(255); //   0-255
-		//
+
 		Soft_I2C_Write(0xD9); //  pre-charge
 		Soft_I2C_Write(0xf1); //  0x22 - external, 0xF1 - internal
-		//
+
 		Soft_I2C_Write(0x20); //  memory addressing mode
 		Soft_I2C_Write(0x02); //  page addressing mode   02
-		//
+
 		Soft_I2C_Write(0x21); // set column range
 		Soft_I2C_Write(0); // column start
 		Soft_I2C_Write(127); // column stop
-		//
+
 		Soft_I2C_Write(0x2E); //  stop scrolling
-		//
+
 		if (led_type == 4) {
 			Soft_I2C_Write(0xA0); //  segment re-map, A0 - normal, A1 - remapped
-			//
+
 			Soft_I2C_Write(0xC0); // scan direction, C0 - normal, C8 - remapped
 		} else {
 			Soft_I2C_Write(0xA1); //  segment re-map, A0 - normal, A1 - remapped
-			//
+
 			Soft_I2C_Write(0xC8); // scan direction, C0 - normal, C8 - remapped
 		}
-		//
+
 		Soft_I2C_Write(0xDA); //  COM pins configure
 		Soft_I2C_Write(0x12); // 12 for x64
-		//
+
 		Soft_I2C_Write(0xDB); //  V-COM detect
 		Soft_I2C_Write(0x40); //
 	}
 	Soft_I2C_Write(0xA4); //  display entire ON
-	//
+
 	Soft_I2C_Write(0xA6); // 0xA6 - normal, 0xA7 - inverse
-	//
+
 	Soft_I2C_Stop();
-	//
+
 	// ********clear OLED***********
-	//
+
 	Delay_ms(100);
 	Soft_I2C_Start();
 	Soft_I2C_Write(led_addr); // device addres
 	Soft_I2C_Write(64); // 0 - continious mode, command; 64 - Co, data
-	//
+
 	if (led_type == 2 | led_type == 3) { // 128*32 OLED
 		for (r = 0; r <= 3; r++) {
 			set_addressing(r, 0); // clear all 4 pages
@@ -224,11 +237,9 @@ void oled_init(void) { // OLED init
 		}
 
 	}
-	//
+
 	Soft_I2C_Stop();
 	send_command(0xAF); //  display ON
-	//
-
 }
 
 void send_command(char oled_command) {
@@ -246,7 +257,7 @@ void set_addressing(char pagenum, char c_start) {
 	Soft_I2C_Write(led_addr); // device addres
 	Soft_I2C_Write(0); // 0 - continious mode, command; 64 - Co, data
 	Soft_I2C_Write(0xB0 + pagenum); // set page number
-	//
+
 	if (c <= 15) {
 		a = c;
 		b = 0;
@@ -256,36 +267,40 @@ void set_addressing(char pagenum, char c_start) {
 	}
 	Soft_I2C_Write(a); // set lower nibble of start address
 	Soft_I2C_Write(0x10 + b); // set higher nibble of start address
-	//
+
 	Soft_I2C_Start();
 	Soft_I2C_Write(led_addr); // device addres
 	Soft_I2C_Write(64); // 0 - continious mode, command; 64 - Co, data
 }
-//
+
 
 void led_wr_str(char col, char pos, char str[], char leng) { //
 	char i;
-	if (led_type == 4 | led_type == 5) oled_wr_str(pos, col, str, leng); // 128*64  OLED display
-	else if (led_type == 2 | led_type == 3) oled_wr_str(7 * pos + 4, col * 2, str, leng); // 128*32   OLED display
-	else { // 1602 LCD
-		// Set address
+
+	if ((led_type == 4) || (led_type == 5)) {				/* 128x64 OLED display */
+		oled_wr_str(pos, col, str, leng);
+	} else if ((led_type == 2) || (led_type == 3)) {		/* 128x32 OLED display */
+		oled_wr_str(7 * pos + 4, col * 2, str, leng);
+	} else {												/* 16x2 character LCD */
+		/* Set address */
 		RS = 0;
 		led_send(8 + col * 4);
 		led_send(pos);
-		//
+
 		RS = 1;
-		for (i = 0; i < leng; i++) { // write string
-			// write letter
+		for (i = 0; i < leng; i++) {						/* write string */
+			/* write letter */
 			led_send(str[i] >> 4);
 			led_send(str[i]);
 		}
-
 	}
 }
-//
+
 
 void oled_wr_str(char col, char page, char str[], char leng) { //    128*32 or 128*64 OLED
-	char i, h, g;
+	char i;
+	char h;
+	char g;
 	bit_byte_t w1;
 	bit_byte_t w2;
 

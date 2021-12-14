@@ -13,19 +13,21 @@
 
 #include "extratypes.h"
 #include "preprocessor.h"
+#include "common.h"
 
+#include "eeprom_map.h"
 #include "pic_init.h"
 
 
 
 void pic_init(void) {
-	asm("CLRWDT");
+	CLEAR_WDT();
 	WDTCONbits.WDTPS4 = 0;
 	WDTCONbits.WDTPS3 = 1;
 	WDTCONbits.WDTPS2 = 0; // 1 sec WDT
 	WDTCONbits.WDTPS1 = 1;
 	WDTCONbits.WDTPS0 = 0;
-	asm("CLRWDT");
+	CLEAR_WDT();
 
 	ANSELA = 0;
 	ANSA0 = 1; // analog inputs
@@ -46,9 +48,9 @@ void pic_init(void) {
 	TRISA = 0b00000011;
 	TRISB = 0b00000111;
 	TRISC = 0b00000000; //
-	//
+
 	ADC_Init();
-	//
+
 
 #if 0
 	ADCON1.B0 = 1; // ADC with the internal reference
