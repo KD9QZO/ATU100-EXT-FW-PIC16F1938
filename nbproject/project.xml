@@ -6,19 +6,38 @@
             <name>ATU100_PIC16F1938</name>
             <creation-uuid>f7bcf594-b0cf-4a90-ba75-545e14af036d</creation-uuid>
             <make-project-type>0</make-project-type>
-            <c-extensions/>
+            <c-extensions>c</c-extensions>
             <cpp-extensions/>
-            <header-extensions/>
+            <header-extensions>h</header-extensions>
             <asminc-extensions/>
+            <sourceEncoding>UTF-8</sourceEncoding>
             <make-dep-projects/>
-            <sourceRootList/>
+            <sourceRootList>
+                <sourceRootElem>src</sourceRootElem>
+                <sourceRootElem>include</sourceRootElem>
+            </sourceRootList>
             <confList>
                 <confElem>
                     <name>default</name>
                     <type>2</type>
                 </confElem>
+                <confElem>
+                    <name>Debug</name>
+                    <type>2</type>
+                </confElem>
+                <confElem>
+                    <name>Release</name>
+                    <type>2</type>
+                </confElem>
+                <confElem>
+                    <name>SDCC_Debug</name>
+                    <type>2</type>
+                </confElem>
+                <confElem>
+                    <name>SDCC_Release</name>
+                    <type>2</type>
+                </confElem>
             </confList>
-            <sourceEncoding>UTF-8</sourceEncoding>
             <formatting>
                 <project-formatting-style>false</project-formatting-style>
             </formatting>

@@ -31,7 +31,7 @@ DEFAULTCONF=default
 CONF=${DEFAULTCONF}
 
 # All Configurations
-ALLCONFS=default 
+ALLCONFS=default Debug Release SDCC_Debug SDCC_Release 
 
 
 # build
@@ -46,12 +46,20 @@ ALLCONFS=default
 # clobber
 .clobber-impl: .clobber-pre .depcheck-impl
 	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=default clean
+	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=Debug clean
+	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=Release clean
+	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=SDCC_Debug clean
+	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=SDCC_Release clean
 
 
 
 # all
 .all-impl: .all-pre .depcheck-impl
 	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=default build
+	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=Debug build
+	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=Release build
+	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=SDCC_Debug build
+	    ${MAKE} SUBPROJECTS=${SUBPROJECTS} CONF=SDCC_Release build
 
 
 
