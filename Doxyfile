@@ -3,11 +3,12 @@
 #---------------------------------------------------------------------------
 # Project related configuration options
 #---------------------------------------------------------------------------
+
 DOXYFILE_ENCODING      = UTF-8
 PROJECT_NAME           = "ATU-100 EXT Firmware for PIC16F1938"
 PROJECT_NUMBER         = 3.2.1
 PROJECT_BRIEF          = "This is the firmware for the EXT version of the ATU-100 antenna tuner, using the PIC16F1938 microcontroller"
-PROJECT_LOGO           = 
+PROJECT_LOGO           =
 OUTPUT_DIRECTORY       = D:\Development\MPLAB_X_IDE_Projects\ATU100_PIC16F1938.X\doc\doxygen
 CREATE_SUBDIRS         = NO
 ALLOW_UNICODE_NAMES    = NO
@@ -28,8 +29,8 @@ ABBREVIATE_BRIEF       = "The $name class" \
 ALWAYS_DETAILED_SEC    = YES
 INLINE_INHERITED_MEMB  = NO
 FULL_PATH_NAMES        = YES
-STRIP_FROM_PATH        = 
-STRIP_FROM_INC_PATH    = 
+STRIP_FROM_PATH        =
+STRIP_FROM_INC_PATH    =
 SHORT_NAMES            = NO
 JAVADOC_AUTOBRIEF      = NO
 QT_AUTOBRIEF           = NO
@@ -37,13 +38,13 @@ MULTILINE_CPP_IS_BRIEF = NO
 INHERIT_DOCS           = YES
 SEPARATE_MEMBER_PAGES  = NO
 TAB_SIZE               = 4
-ALIASES                = 
-TCL_SUBST              = 
+ALIASES                =
+TCL_SUBST              =
 OPTIMIZE_OUTPUT_FOR_C  = YES
 OPTIMIZE_OUTPUT_JAVA   = NO
 OPTIMIZE_FOR_FORTRAN   = NO
 OPTIMIZE_OUTPUT_VHDL   = NO
-EXTENSION_MAPPING      = 
+EXTENSION_MAPPING      =
 MARKDOWN_SUPPORT       = YES
 TOC_INCLUDE_HEADINGS   = 5
 AUTOLINK_SUPPORT       = YES
@@ -93,14 +94,14 @@ GENERATE_TODOLIST      = YES
 GENERATE_TESTLIST      = YES
 GENERATE_BUGLIST       = YES
 GENERATE_DEPRECATEDLIST= YES
-ENABLED_SECTIONS       = 
+ENABLED_SECTIONS       =
 MAX_INITIALIZER_LINES  = 250
 SHOW_USED_FILES        = YES
 SHOW_FILES             = YES
 SHOW_NAMESPACES        = YES
-FILE_VERSION_FILTER    = 
-LAYOUT_FILE            = 
-CITE_BIB_FILES         = 
+FILE_VERSION_FILTER    =
+LAYOUT_FILE            = ./doc/doxygen/doxygenLayout.xml
+CITE_BIB_FILES         =
 
 
 #---------------------------------------------------------------------------
@@ -169,19 +170,19 @@ FILE_PATTERNS          = *.c \
                          *.ucf \
                          *.qsf
 RECURSIVE              = YES
-EXCLUDE                = 
+EXCLUDE                =
 EXCLUDE_SYMLINKS       = NO
-EXCLUDE_PATTERNS       = 
-EXCLUDE_SYMBOLS        = 
-EXAMPLE_PATH           = 
+EXCLUDE_PATTERNS       =
+EXCLUDE_SYMBOLS        =
+EXAMPLE_PATH           =
 EXAMPLE_PATTERNS       = *
 EXAMPLE_RECURSIVE      = NO
-IMAGE_PATH             = 
-INPUT_FILTER           = 
-FILTER_PATTERNS        = 
+IMAGE_PATH             = ./doc/res/img
+INPUT_FILTER           =
+FILTER_PATTERNS        =
 FILTER_SOURCE_FILES    = NO
-FILTER_SOURCE_PATTERNS = 
-USE_MDFILE_AS_MAINPAGE = 
+FILTER_SOURCE_PATTERNS =
+USE_MDFILE_AS_MAINPAGE = ./README.md
 
 
 #---------------------------------------------------------------------------
@@ -198,7 +199,7 @@ SOURCE_TOOLTIPS        = YES
 USE_HTAGS              = NO
 VERBATIM_HEADERS       = YES
 CLANG_ASSISTED_PARSING = NO
-CLANG_OPTIONS          = 
+CLANG_OPTIONS          =
 
 
 #---------------------------------------------------------------------------
@@ -207,7 +208,7 @@ CLANG_OPTIONS          =
 
 ALPHABETICAL_INDEX     = YES
 COLS_IN_ALPHA_INDEX    = 5
-IGNORE_PREFIX          = 
+IGNORE_PREFIX          =
 
 
 #---------------------------------------------------------------------------
@@ -217,14 +218,14 @@ IGNORE_PREFIX          =
 GENERATE_HTML          = YES
 HTML_OUTPUT            = html
 HTML_FILE_EXTENSION    = .html
-HTML_HEADER            = 
-HTML_FOOTER            = 
-HTML_STYLESHEET        = 
-HTML_EXTRA_STYLESHEET  = 
-HTML_EXTRA_FILES       = 
-HTML_COLORSTYLE_HUE    = 220
-HTML_COLORSTYLE_SAT    = 100
-HTML_COLORSTYLE_GAMMA  = 80
+HTML_HEADER            = ./doc/doxygen/doxyHeader.html
+HTML_FOOTER            = ./doc/doxygen/doxyFooter.html
+HTML_STYLESHEET        = ./doc/doxygen/doxyStyle.css
+HTML_EXTRA_STYLESHEET  =
+HTML_EXTRA_FILES       =
+HTML_COLORSTYLE_HUE    = 200
+HTML_COLORSTYLE_SAT    = 150
+HTML_COLORSTYLE_GAMMA  = 115
 HTML_TIMESTAMP         = YES
 HTML_DYNAMIC_SECTIONS  = YES
 HTML_INDEX_NUM_ENTRIES = 100
@@ -234,20 +235,20 @@ DOCSET_BUNDLE_ID       = org.doxygen.Project
 DOCSET_PUBLISHER_ID    = org.doxygen.Publisher
 DOCSET_PUBLISHER_NAME  = Publisher
 GENERATE_HTMLHELP      = NO
-CHM_FILE               = 
-HHC_LOCATION           = 
+CHM_FILE               =
+HHC_LOCATION           =
 GENERATE_CHI           = NO
-CHM_INDEX_ENCODING     = 
+CHM_INDEX_ENCODING     =
 BINARY_TOC             = NO
 TOC_EXPAND             = NO
 GENERATE_QHP           = NO
-QCH_FILE               = 
+QCH_FILE               =
 QHP_NAMESPACE          = org.doxygen.Project
 QHP_VIRTUAL_FOLDER     = doc
-QHP_CUST_FILTER_NAME   = 
-QHP_CUST_FILTER_ATTRS  = 
-QHP_SECT_FILTER_ATTRS  = 
-QHG_LOCATION           = 
+QHP_CUST_FILTER_NAME   =
+QHP_CUST_FILTER_ATTRS  =
+QHP_SECT_FILTER_ATTRS  =
+QHG_LOCATION           =
 GENERATE_ECLIPSEHELP   = NO
 ECLIPSE_DOC_ID         = org.doxygen.Project
 DISABLE_INDEX          = NO
@@ -260,15 +261,15 @@ FORMULA_TRANSPARENT    = YES
 USE_MATHJAX            = YES
 MATHJAX_FORMAT         = HTML-CSS
 MATHJAX_RELPATH        = http://cdn.mathjax.org/mathjax/latest
-MATHJAX_EXTENSIONS     = 
-MATHJAX_CODEFILE       = 
+MATHJAX_EXTENSIONS     =
+MATHJAX_CODEFILE       =
 SEARCHENGINE           = YES
 SERVER_BASED_SEARCH    = NO
 EXTERNAL_SEARCH        = NO
-SEARCHENGINE_URL       = 
+SEARCHENGINE_URL       =
 SEARCHDATA_FILE        = searchdata.xml
-EXTERNAL_SEARCH_ID     = 
-EXTRA_SEARCH_MAPPINGS  = 
+EXTERNAL_SEARCH_ID     =
+EXTRA_SEARCH_MAPPINGS  =
 
 
 #---------------------------------------------------------------------------
@@ -281,11 +282,11 @@ LATEX_CMD_NAME         = latex
 MAKEINDEX_CMD_NAME     = makeindex
 COMPACT_LATEX          = NO
 PAPER_TYPE             = letter
-EXTRA_PACKAGES         = 
-LATEX_HEADER           = 
-LATEX_FOOTER           = 
-LATEX_EXTRA_STYLESHEET = 
-LATEX_EXTRA_FILES      = 
+EXTRA_PACKAGES         =
+LATEX_HEADER           = ./doc/doxygen/doxyHeader.tex
+LATEX_FOOTER           = ./doc/doxygen/doxyFooter.tex
+LATEX_EXTRA_STYLESHEET = ./doc/doxygen/doxyStyle.sty
+LATEX_EXTRA_FILES      =
 PDF_HYPERLINKS         = YES
 USE_PDFLATEX           = YES
 LATEX_BATCHMODE        = YES
@@ -303,8 +304,8 @@ GENERATE_RTF           = YES
 RTF_OUTPUT             = rtf
 COMPACT_RTF            = NO
 RTF_HYPERLINKS         = YES
-RTF_STYLESHEET_FILE    = 
-RTF_EXTENSIONS_FILE    = 
+RTF_STYLESHEET_FILE    = ./doc/doxygen/doxyStyleRTF.cfg
+RTF_EXTENSIONS_FILE    = ./doc/doxygen/doxyExtRTF.cfg
 RTF_SOURCE_CODE        = YES
 
 
@@ -315,7 +316,7 @@ RTF_SOURCE_CODE        = YES
 GENERATE_MAN           = NO
 MAN_OUTPUT             = man
 MAN_EXTENSION          = .3
-MAN_SUBDIR             = 
+MAN_SUBDIR             =
 MAN_LINKS              = NO
 
 
@@ -351,7 +352,7 @@ GENERATE_AUTOGEN_DEF   = YES
 GENERATE_PERLMOD       = NO
 PERLMOD_LATEX          = NO
 PERLMOD_PRETTY         = YES
-PERLMOD_MAKEVAR_PREFIX = 
+PERLMOD_MAKEVAR_PREFIX =
 
 
 #---------------------------------------------------------------------------
@@ -362,10 +363,89 @@ ENABLE_PREPROCESSING   = YES
 MACRO_EXPANSION        = YES
 EXPAND_ONLY_PREDEF     = YES
 SEARCH_INCLUDES        = YES
-INCLUDE_PATH           = ./include/
-INCLUDE_FILE_PATTERNS  = 
-PREDEFINED             = __DOXYGEN__
-EXPAND_AS_DEFINED      = 
+INCLUDE_PATH           = ./include/ \
+                         "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/" \
+                         "C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/" \
+                         "C:/Program Files/Microchip/xc8/v2.32/pic/include/c99/"
+INCLUDE_FILE_PATTERNS  =
+PREDEFINED             = __DOXYGEN__ \
+                         DEFAULT \
+                         COMPILER_XC8 \
+                         _OMNI_CODE_ \
+                         __STACK_COMPILED=1 \
+                         __STACK_HYBRID=2 \
+                         __STACK_REENTRANT=4 \
+                         __STACK=__STACK_COMPILED \
+                         __ADDRQUAL_IGNORE=1 \
+                         __ADDRQUAL_REQUEST=2 \
+                         __ADDRQUAL_REQUIRE=4 \
+                         __ADDRQUAL_REJECT=8 \
+                         __ADDRQUAL=__ADDRQUAL_REQUIRE \
+                         __XC \
+                         __XC8 \
+                         __XC__ \
+                         __XC8__ \
+                         __XC8_VERSION=2320 \
+                         HI_TECH_C \
+                         __CC_NONE=0 \
+                         __CC_RAM=1 \
+                         __CODECOV=__CC_NONE \
+                         __OPTIM_FLAGS=0x103 \
+                         __OPTIM_NONE=0x00 \
+                         __OPTIM_ASM=0x01 \
+                         __OPTIM_ASMFILE=0x02 \
+                         __OPTIM_SPEED=0x20000 \
+                         __OPTIM_3=0x20000 \
+                         __OPTIM_SPACE=0x40000 \
+                         __OPTIM_SIZE=0x40000 \
+                         __OPTIM_S=0x40000 \
+                         __OPTIM_DEBUG=0x80000 \
+                         __OPTIM_G=0x80000 \
+                         __OPTIM_LOCAL=0x200000 \
+                         __OPTIM_1=0x100 \
+                         __OPTIM_2=0x200 \
+                         __OPTIM_LEVEL=1 \
+                         _CLIB_VERSION=1999 \
+                         _16F1938 \
+                         __16F1938 \
+                         __16F1938__ \
+                         _PIC14E \
+                         __PICCPRO__ \
+                         __PICC__ \
+                         _MPC_ \
+                         __XC \
+                         __XC8 \
+                         _HAS_INT24 \
+                         __SIZEOF_CHAR__=1 \
+                         __SIZEOF_SHORT__=2 \
+                         __SIZEOF_INT__=2 \
+                         __SIZEOF_SHORT_LONG__=3 \
+                         __SIZEOF_INT24__=3 \
+                         __SIZEOF___INT24__=3 \
+                         __SIZEOF_LONG__=4 \
+                         __SIZEOF_LONG_LONG__=8 \
+                         __SIZEOF_FLOAT__=4 \
+                         __SIZEOF_DOUBLE__=4 \
+                         __SIZEOF_LONG_DOUBLE__=4 \
+                         _COMMON_=1 \
+                         _COMMON_ADDR_=112 \
+                         _COMMON_SIZE_=16 \
+                         _BANKCOUNT_=32 \
+                         _BANKBITS_=5 \
+                         _GPRCOUNT_=13 \
+                         _GPRBITS_=3 \
+                         __DATABANK=3 \
+                         __FLASHTYPE=2 \
+                         _NVMREG_INT=2 \
+                         _EEREG_INT=1 \
+                         _NOREG_INT=0 \
+                         _EEPROM_INT=1 \
+                         _ROMSIZE=16384 \
+                         _EEPROMSIZE=256 \
+                         EEPROM_SIZE=256 \
+                         _FLASH_ERASE_SIZE=32 \
+                         _FLASH_WRITE_SIZE=32
+EXPAND_AS_DEFINED      =
 SKIP_FUNCTION_MACROS   = YES
 
 
@@ -373,12 +453,12 @@ SKIP_FUNCTION_MACROS   = YES
 # Configuration options related to external references
 #---------------------------------------------------------------------------
 
-TAGFILES               = 
-GENERATE_TAGFILE       = 
-ALLEXTERNALS           = NO
+TAGFILES               =
+GENERATE_TAGFILE       = ./doc/doxygen/doxytags.xml
+ALLEXTERNALS           = YES
 EXTERNAL_GROUPS        = YES
 EXTERNAL_PAGES         = YES
-PERL_PATH              = /usr/bin/perl
+PERL_PATH              = C:/ActivePerl/bin/perl.exe
 
 
 #---------------------------------------------------------------------------
@@ -386,14 +466,14 @@ PERL_PATH              = /usr/bin/perl
 #---------------------------------------------------------------------------
 
 CLASS_DIAGRAMS         = YES
-MSCGEN_PATH            = 
-DIA_PATH               = 
-HIDE_UNDOC_RELATIONS   = YES
+MSCGEN_PATH            = "C:/Program Files (x86)/Mscgen"
+DIA_PATH               = "C:/Program Files (x86)/Dia/bin"
+HIDE_UNDOC_RELATIONS   = NO
 HAVE_DOT               = YES
 DOT_NUM_THREADS        = 5
 DOT_FONTNAME           = Calibri
 DOT_FONTSIZE           = 9
-DOT_FONTPATH           = 
+DOT_FONTPATH           =
 CLASS_GRAPH            = YES
 COLLABORATION_GRAPH    = YES
 GROUP_GRAPHS           = YES
@@ -408,13 +488,13 @@ GRAPHICAL_HIERARCHY    = YES
 DIRECTORY_GRAPH        = YES
 DOT_IMAGE_FORMAT       = svg
 INTERACTIVE_SVG        = YES
-DOT_PATH               = 
-DOTFILE_DIRS           = 
-MSCFILE_DIRS           = 
-DIAFILE_DIRS           = 
-PLANTUML_JAR_PATH      = 
-PLANTUML_CFG_FILE      = 
-PLANTUML_INCLUDE_PATH  = 
+DOT_PATH               = "C:/Program Files (x86)/Graphviz2.38/bin"
+DOTFILE_DIRS           = ./doc/res/dot
+MSCFILE_DIRS           = ./doc/res/msc
+DIAFILE_DIRS           = ./doc/res/dia
+PLANTUML_JAR_PATH      =
+PLANTUML_CFG_FILE      =
+PLANTUML_INCLUDE_PATH  =
 DOT_GRAPH_MAX_NODES    = 2500
 MAX_DOT_GRAPH_DEPTH    = 0
 DOT_TRANSPARENT        = YES
