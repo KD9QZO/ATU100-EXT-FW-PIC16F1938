@@ -59,31 +59,31 @@ packages/
 *.o
 *.sdb
 *.obj.dump
-html/
-nbproject/private
-nbproject/Package-*.bash
-build/
-nbbuild/
-dist/
-nbdist/
-nbactions.xml
-nb-configuration.xml
-funclist
-nbproject/Makefile-*
-disassembly/
+/html/
+/nbproject/private/
+/nbproject/Package-*.bash
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/nbactions.xml
+/nb-configuration.xml
+/funclist
+/nbproject/Makefile-*
+/disassembly/
 
 
 # doxygen #
 
-doc/doxygen/doxygen.log
-doc/doxygen/doxytags.xml
-doc/doxygen/*.tmp
-doc/doxygen/def/
-doc/doxygen/docbook/
-doc/doxygen/html/
-doc/doxygen/latex/
-doc/doxygen/rtf/
-doc/doxygen/xml/
+/doc/doxygen/doxygen.log
+/doc/doxygen/doxytags.xml
+/doc/doxygen/*.tmp
+/doc/doxygen/def/
+/doc/doxygen/docbook/
+/doc/doxygen/html/
+/doc/doxygen/latex/
+/doc/doxygen/rtf/
+/doc/doxygen/xml/
 
 
 # misc #
