@@ -80,7 +80,6 @@ packages/
 /doc/doxygen/*.tmp
 /doc/doxygen/def/
 /doc/doxygen/docbook/
-/doc/doxygen/html/
 /doc/doxygen/latex/
 /doc/doxygen/rtf/
 /doc/doxygen/xml/
