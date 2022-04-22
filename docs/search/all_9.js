@@ -1,29 +1,4 @@
 var searchData=
 [
-  ['l_0',['L',['../main_8c.html#ae5391743278af05c270fc044ed6d3024',1,'main.c']]],
-  ['l1_1',['L1',['../extratypes_8h.html#a6945c2532ad104324fa43ee2890d584b',1,'inductor_values_t']]],
-  ['l2_2',['L2',['../extratypes_8h.html#a72df0d4b6b0fd2b6a6b74567a5c7d4ac',1,'inductor_values_t']]],
-  ['l3_3',['L3',['../extratypes_8h.html#a9d421af5f6c88c5fab536fe9f5634a2f',1,'inductor_values_t']]],
-  ['l4_4',['L4',['../extratypes_8h.html#a8e95b2c934773277b69d16f5fd3ce727',1,'inductor_values_t']]],
-  ['l5_5',['L5',['../extratypes_8h.html#ae558961b6d0549dc4aec8a93593c8ca2',1,'inductor_values_t']]],
-  ['l6_6',['L6',['../extratypes_8h.html#a77796b776df8383f102039b387d6a7f3',1,'inductor_values_t']]],
-  ['l7_7',['L7',['../extratypes_8h.html#a036cf1ef886d6445b79fa4b4d69eb34b',1,'inductor_values_t']]],
-  ['l_5finvert_8',['L_invert',['../main_8h.html#abc7312b16f3674fe2b11595e0d6fa438',1,'main.h']]],
-  ['l_5flinear_9',['L_linear',['../main_8h.html#a177c16df1e9eb150c05e71778d69d75c',1,'main.h']]],
-  ['l_5fmult_10',['L_mult',['../main_8h.html#aaa750957d35c4b05519660e0a147121b',1,'main.h']]],
-  ['l_5fq_11',['L_q',['../main_8h.html#a402f820aea98289181cc0fea6f9618cb',1,'main.h']]],
-  ['lcd_5find_12',['lcd_ind',['../main_8h.html#abf3918c21112474db61609b3462577ee',1,'lcd_ind(void):&#160;main.c'],['../main_8c.html#a6911b3f075cdf1d54cb14f17f6e5ef6b',1,'lcd_ind():&#160;main.c']]],
-  ['lcd_5fnibble_13',['lcd_nibble',['../oled__control_8h.html#a0c13d8f77b1bfcb9fda62a9925ac77f0',1,'oled_control.h']]],
-  ['lcd_5fprep_14',['lcd_prep',['../main_8h.html#a5b51833f12193accc58a0162848dc02e',1,'lcd_prep(void):&#160;main.c'],['../main_8c.html#a46f52cccc77b5d2d91f35334046bc8eb',1,'lcd_prep():&#160;main.c']]],
-  ['lcd_5fprep_5fshort_15',['lcd_prep_short',['../main_8c.html#a53c1e07e752c4f5226af4e9e30306ba1',1,'main.c']]],
-  ['lcd_5fpwr_16',['lcd_pwr',['../main_8h.html#a236d4ed610f158cf424d552ac88e666c',1,'lcd_pwr(void):&#160;main.c'],['../main_8c.html#ae5a14b4884e85f47ad8a4a716f13203a',1,'lcd_pwr():&#160;main.c']]],
-  ['lcd_5fswr_17',['lcd_swr',['../main_8h.html#ac719b8f1806a4dae51a6c47c20573fa2',1,'lcd_swr(int):&#160;main.c'],['../main_8c.html#aa8fd50019a763561abc6621bb224417f',1,'lcd_swr(int swr):&#160;main.c']]],
-  ['led_18',['LED',['../oled__control_8h.html#ad46735fd9477795d78d363cbc57c4f23',1,'oled_control.h']]],
-  ['led_5faddr_19',['led_addr',['../oled__control_8h.html#a9c5d1a9e6e0bc98191938dbbd9f38b68',1,'oled_control.h']]],
-  ['led_5finit_20',['led_init',['../oled__control_8h.html#a7eb4d382bdd4b42c57dbb7154d03ac66',1,'led_init(void):&#160;oled_control.c'],['../oled__control_8c.html#a7eb4d382bdd4b42c57dbb7154d03ac66',1,'led_init(void):&#160;oled_control.c']]],
-  ['led_5fsend_21',['led_send',['../oled__control_8h.html#a420d65b395fa101995b57d8e1a3a87af',1,'led_send(char):&#160;oled_control.c'],['../oled__control_8c.html#a5a5d7ef6b1877aaf94c1f4b7fc0f2d2d',1,'led_send(char nibble):&#160;oled_control.c']]],
-  ['led_5ftype_22',['led_type',['../oled__control_8h.html#a3e48f126afd1fa18068e8a7f7cec8e5f',1,'oled_control.h']]],
-  ['led_5fwr_5fstr_23',['led_wr_str',['../oled__control_8h.html#ab272af1010175ba1166b08b8b3df6874',1,'led_wr_str(char, char, char *, char):&#160;oled_control.h'],['../oled__control_8c.html#a9d56c6c2e653b24a0caf505492ad818a',1,'led_wr_str(char col, char pos, char str[], char leng):&#160;oled_control.c']]],
-  ['loss_5find_24',['Loss_ind',['../main_8h.html#a1bb4d7ef86fcdb7b4614e8b762236d36',1,'main.h']]],
-  ['loss_5fmode_25',['Loss_mode',['../main_8c.html#aeb6428151c823a0855385b535e3b00f6',1,'main.c']]]
+  ['k_5fmult_0',['K_Mult',['../main_8h.html#a35c822810739d35ecf2192f3b3144302',1,'main.h']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['inductor_20values_0',['Inductor Values',['../group__ind__values.html',1,'']]]
+  ['eeprom_20address_20mapping_0',['EEPROM Address Mapping',['../group__eeprom__addr__map.html',1,'']]]
 ];

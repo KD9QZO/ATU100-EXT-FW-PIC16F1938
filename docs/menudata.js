@@ -36,7 +36,8 @@ var menudata={children:[
 {text:"All Project Files",url:"files.html"},
 {text:"Global Symbols",url:"globals.html",children:[
 {text:"All",url:"globals.html",children:[
-{text:"a",url:"globals.html#index_a"},
+{text:"_",url:"globals.html#index__5F"},
+{text:"a",url:"globals_a.html#index_a"},
 {text:"b",url:"globals_b.html#index_b"},
 {text:"c",url:"globals_c.html#index_c"},
 {text:"d",url:"globals_d.html#index_d"},
@@ -92,6 +93,7 @@ var menudata={children:[
 {text:"d",url:"globals_eval.html#index_d"},
 {text:"e",url:"globals_eval.html#index_e"}]},
 {text:"Macros",url:"globals_defs.html",children:[
+{text:"_",url:"globals_defs.html#index__5F"},
 {text:"a",url:"globals_defs.html#index_a"},
 {text:"c",url:"globals_defs.html#index_c"},
 {text:"e",url:"globals_defs.html#index_e"},

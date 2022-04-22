@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['l_0',['L',['../main_8c.html#ae5391743278af05c270fc044ed6d3024',1,'main.c']]],
+  ['l_0',['L',['../main_8c.html#aee73cc056696e504430c53eaa9c58cf0',1,'main.c']]],
   ['l1_1',['L1',['../extratypes_8h.html#a6945c2532ad104324fa43ee2890d584b',1,'inductor_values_t']]],
   ['l2_2',['L2',['../extratypes_8h.html#a72df0d4b6b0fd2b6a6b74567a5c7d4ac',1,'inductor_values_t']]],
   ['l3_3',['L3',['../extratypes_8h.html#a9d421af5f6c88c5fab536fe9f5634a2f',1,'inductor_values_t']]],
@@ -8,15 +8,15 @@ var searchData=
   ['l5_5',['L5',['../extratypes_8h.html#ae558961b6d0549dc4aec8a93593c8ca2',1,'inductor_values_t']]],
   ['l6_6',['L6',['../extratypes_8h.html#a77796b776df8383f102039b387d6a7f3',1,'inductor_values_t']]],
   ['l7_7',['L7',['../extratypes_8h.html#a036cf1ef886d6445b79fa4b4d69eb34b',1,'inductor_values_t']]],
-  ['l_5finvert_8',['L_invert',['../main_8h.html#abc7312b16f3674fe2b11595e0d6fa438',1,'main.h']]],
-  ['l_5flinear_9',['L_linear',['../main_8h.html#a177c16df1e9eb150c05e71778d69d75c',1,'main.h']]],
-  ['l_5fmult_10',['L_mult',['../main_8h.html#aaa750957d35c4b05519660e0a147121b',1,'main.h']]],
-  ['l_5fq_11',['L_q',['../main_8h.html#a402f820aea98289181cc0fea6f9618cb',1,'main.h']]],
-  ['lcd_5fnibble_12',['lcd_nibble',['../oled__control_8h.html#a0c13d8f77b1bfcb9fda62a9925ac77f0',1,'oled_control.h']]],
-  ['lcd_5fprep_5fshort_13',['lcd_prep_short',['../main_8c.html#a53c1e07e752c4f5226af4e9e30306ba1',1,'main.c']]],
-  ['led_14',['LED',['../oled__control_8h.html#ad46735fd9477795d78d363cbc57c4f23',1,'oled_control.h']]],
-  ['led_5faddr_15',['led_addr',['../oled__control_8h.html#a9c5d1a9e6e0bc98191938dbbd9f38b68',1,'oled_control.h']]],
-  ['led_5ftype_16',['led_type',['../oled__control_8h.html#a3e48f126afd1fa18068e8a7f7cec8e5f',1,'oled_control.h']]],
-  ['loss_5find_17',['Loss_ind',['../main_8h.html#a1bb4d7ef86fcdb7b4614e8b762236d36',1,'main.h']]],
-  ['loss_5fmode_18',['Loss_mode',['../main_8c.html#aeb6428151c823a0855385b535e3b00f6',1,'main.c']]]
+  ['l_5finvert_8',['L_invert',['../main_8h.html#a1cb2584b4e14806b7127fa9c78618bc5',1,'main.h']]],
+  ['l_5flinear_9',['L_linear',['../main_8h.html#a8fac92176e2b16a52292c8edaba5cd0e',1,'main.h']]],
+  ['l_5fmult_10',['L_mult',['../main_8h.html#ada1bcea582aef3066267cc0a3d974b59',1,'main.h']]],
+  ['l_5fq_11',['L_q',['../main_8h.html#a33a1c892712ec2aa72fcf0c95fd99620',1,'main.h']]],
+  ['lcd_5fnibble_12',['lcd_nibble',['../oled__control_8h.html#a14bd04449de606a76555b8b7e0646b03',1,'oled_control.h']]],
+  ['lcd_5fprep_5fshort_13',['lcd_prep_short',['../main_8c.html#a15507bc26e0d6be7a1c01b6f6e7f3edf',1,'main.c']]],
+  ['led_14',['LED',['../oled__control_8h.html#a10fa20202b15badc5a8e474c2fd0fa66',1,'oled_control.h']]],
+  ['led_5faddr_15',['led_addr',['../oled__control_8h.html#a2bf53edba60e4dc02fd8d4b2d2e4afee',1,'oled_control.h']]],
+  ['led_5ftype_16',['led_type',['../oled__control_8h.html#ac7ab754b3429eb08634739a716b3abe7',1,'oled_control.h']]],
+  ['loss_5find_17',['Loss_ind',['../main_8h.html#a1b37d11ebf9498fa3b6ead268c7e8812',1,'main.h']]],
+  ['loss_5fmode_18',['Loss_mode',['../main_8c.html#ac79dbbaa71713995ffbf0cb7eae8eaed',1,'main.c']]]
 ];

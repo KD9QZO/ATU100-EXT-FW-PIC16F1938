@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="oled__control_8c.html#a5a5d7ef6b1877aaf94c1f4b7fc0f2d2d" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="oled__control_8c.html#a3d35666326cc069eda3b63c70983fdbc" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="188,-58.2939 188,-76.2939 243,-76.2939 243,-58.2939 188,-58.2939"/>
 <text text-anchor="middle" x="215.5" y="-65.0939" font-family="Calibri" font-size="9.00">led_send</text>
 </a>
@@ -98,7 +98,7 @@
 </g>
 <!-- Node7 -->
 <g id="node7" class="node"><title>Node7</title>
-<g id="a_node7"><a xlink:href="oled__control_8c.html#ad141ed038278a6fcad6c307932f01ec8" target="_top" xlink:title=" ">
+<g id="a_node7"><a xlink:href="oled__control_8c.html#a78a346ba6e89c3140dd554a46e56c719" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="175,-134.294 175,-152.294 256,-152.294 256,-134.294 175,-134.294"/>
 <text text-anchor="middle" x="215.5" y="-141.094" font-family="Calibri" font-size="9.00">send_command</text>
 </a>
@@ -111,7 +111,7 @@
 </g>
 <!-- Node8 -->
 <g id="node8" class="node"><title>Node8</title>
-<g id="a_node8"><a xlink:href="oled__control_8c.html#a6df77e8ec83c50ed6a5ddaf54aa3a9c2" target="_top" xlink:title=" ">
+<g id="a_node8"><a xlink:href="oled__control_8c.html#a3cf32ac4d3d7c92be54c385c1ed8cc76" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="175.5,-21.2939 175.5,-39.2939 255.5,-39.2939 255.5,-21.2939 175.5,-21.2939"/>
 <text text-anchor="middle" x="215.5" y="-28.0939" font-family="Calibri" font-size="9.00">set_addressing</text>
 </a>

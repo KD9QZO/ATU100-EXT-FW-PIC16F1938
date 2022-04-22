@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['get_5fforward_0',['get_forward',['../main_8h.html#acfd46f8711e9c1c20fffdfc8bdaa0ddd',1,'main.h']]],
-  ['get_5fpwr_1',['get_pwr',['../main_8h.html#ab37ca657b79c6b9176cb63e9d812a182',1,'main.h']]],
-  ['get_5freverse_2',['get_reverse',['../main_8h.html#aa6b9a2b3d88f578ba6a9fefd911eae75',1,'main.h']]],
-  ['get_5fswr_3',['get_swr',['../main_8h.html#ad7eb7423e0b17ccfba1ae42f3a3274e0',1,'main.h']]]
+  ['fid_5floss_0',['Fid_loss',['../main_8c.html#aba8d900e29d27ad13aa06fcffd86da44',1,'main.c']]],
+  ['font5x8_1',['font5x8',['../font5x8_8h.html#a325347b071bbd3af170bd816ea8d6ca7',1,'font5x8.h']]],
+  ['font5x8_2eh_2',['font5x8.h',['../font5x8_8h.html',1,'']]],
+  ['forward_3',['Forward',['../main_8c.html#a5b4e55c273727e571632a7baece603cc',1,'main.c']]]
 ];
