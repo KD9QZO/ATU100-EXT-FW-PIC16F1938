@@ -1,5 +1,6 @@
 var annotated_dup =
 [
+    [ "adc_sync_double_result_t", "adc_8h.html#structadc__sync__double__result__t", "adc_8h_structadc__sync__double__result__t" ],
     [ "bit_byte_t", "extratypes_8h.html#unionbit__byte__t", "extratypes_8h_unionbit__byte__t" ],
     [ "bit_byte_t.__unnamed1__", "extratypes_8h.html#structbit__byte__t_8____unnamed1____", "extratypes_8h_structbit__byte__t_8____unnamed1____" ],
     [ "capacitor_values_t", "extratypes_8h.html#structcapacitor__values__t", "extratypes_8h_structcapacitor__values__t" ],

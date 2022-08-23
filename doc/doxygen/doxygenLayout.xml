@@ -4,7 +4,7 @@
   <navindex>
     <tab type="mainpage" visible="yes" title="Main Page" />
     <tab type="pages" visible="yes" title="" intro="Sub-Pages" />
-    <tab type="modules" visible="yes" title="" intro="Modules" />
+    <tab type="modules" visible="yes" title="" intro="Groups" />
     <tab type="namespaces" visible="yes" title="">
       <tab type="namespacelist" visible="yes" title="" intro="" />
       <tab type="namespacemembers" visible="yes" title="" intro="" />
@@ -132,7 +132,7 @@
       <functions title="Function Definitions" />
       <variables title="Variable Definitions" />
     </memberdef>
-    <authorsection/>
+    <authorsection />
   </file>
 
   <!-- Layout definition for a group page -->
@@ -140,17 +140,17 @@
     <briefdescription visible="yes" />
     <groupgraph visible="$GROUP_GRAPHS" />
     <memberdecl>
-      <nestedgroups visible="yes" title="" />
-      <dirs visible="yes" title="" />
-      <files visible="yes" title="" />
+      <nestedgroups visible="yes" title="Sub-Groups" />
+      <dirs visible="yes" title="Directories" />
+      <files visible="yes" title="Files" />
       <namespaces visible="yes" title="" />
       <classes visible="yes" title="" />
-      <defines title="" />
-      <typedefs title="" />
-      <enums title="" />
-      <enumvalues title="" />
-      <functions title="" />
-      <variables title="" />
+      <defines title="Definitions and Macros" />
+      <typedefs title="Type Definitions" />
+      <enums title="Enumerations" />
+      <enumvalues title="Enumerated Values" />
+      <functions title="Function Declarations" />
+      <variables title="Variable Declarations" />
       <signals title="" />
       <publicslots title="" />
       <protectedslots title="" />
@@ -160,16 +160,16 @@
       <friends title="" />
       <membergroups visible="yes" />
     </memberdecl>
-    <detaileddescription title="" />
+    <detaileddescription title="Detailed Group Description" />
     <memberdef>
       <pagedocs/>
       <inlineclasses title="" />
-      <defines title="" />
-      <typedefs title="" />
-      <enums title="" />
-      <enumvalues title="" />
-      <functions title="" />
-      <variables title="" />
+      <defines title="Definitions and Macros" />
+      <typedefs title="Type Definitions" />
+      <enums title="Enumerations" />
+      <enumvalues title="Enumerated Values" />
+      <functions title="Function Definitions" />
+      <variables title="Variable Definitions" />
       <signals title="" />
       <publicslots title="" />
       <protectedslots title="" />

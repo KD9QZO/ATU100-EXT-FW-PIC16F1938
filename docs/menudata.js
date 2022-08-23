@@ -88,10 +88,13 @@ var menudata={children:[
 {text:"s",url:"globals_vars.html#index_s"},
 {text:"t",url:"globals_vars.html#index_t"},
 {text:"w",url:"globals_vars.html#index_w"}]},
+{text:"Typedefs",url:"globals_type.html"},
 {text:"Enumerations",url:"globals_enum.html"},
 {text:"Enumerator",url:"globals_eval.html",children:[
+{text:"c",url:"globals_eval.html#index_c"},
 {text:"d",url:"globals_eval.html#index_d"},
-{text:"e",url:"globals_eval.html#index_e"}]},
+{text:"e",url:"globals_eval.html#index_e"},
+{text:"s",url:"globals_eval.html#index_s"}]},
 {text:"Macros",url:"globals_defs.html",children:[
 {text:"_",url:"globals_defs.html#index__5F"},
 {text:"a",url:"globals_defs.html#index_a"},

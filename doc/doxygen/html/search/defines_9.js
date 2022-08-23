@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xstr',['XSTR',['../preprocessor_8h.html#a03943706e48069237cd57f2d35ca987e',1,'preprocessor.h']]]
+  ['n_5ftx_0',['n_Tx',['../pic__init_8h.html#a11b1f323826fca62291c2e9418707510',1,'pic_init.h']]]
 ];

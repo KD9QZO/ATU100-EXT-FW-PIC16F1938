@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9"/>
     <meta name="generator" content="Doxygen 1.9.2"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>ATU100_PIC16F1938: mcc_generated_files/adc.h File Reference</title>
+    <title>ATU100_PIC16F1938: include/adc.h File Reference</title>
     <link href="tabs.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -112,14 +112,16 @@ $(document).ready(function(){initNavTree('adc_8h.html',''); initResizable(); });
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="adc_8h__incl.svg" width="240" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="adc_8h__incl.svg" width="240" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="adc_8h__dep__incl.svg" width="464" height="223"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="adc_8h__dep__incl.svg" width="108" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="adc_8h_source.html">Go to the source code of this file.</a></p>
@@ -127,14 +129,15 @@ $(document).ready(function(){initNavTree('adc_8h.html',''); initResizable(); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Type Definitions</h2></td></tr>
 <tr class="memitem:ac5362ae65441a5027b4b9b1bf1b573aa"><td class="memItemLeft" align="right" valign="top">typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8h.html#ac5362ae65441a5027b4b9b1bf1b573aa">adc_result_t</a></td></tr>
+<tr class="memdesc:ac5362ae65441a5027b4b9b1bf1b573aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result size of an A/D conversion.  <a href="adc_8h.html#ac5362ae65441a5027b4b9b1bf1b573aa">More...</a><br /></td></tr>
 <tr class="separator:ac5362ae65441a5027b4b9b1bf1b573aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:aafc4060027875f8fe46242b0656d7814"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8h.html#aafc4060027875f8fe46242b0656d7814">adc_channel_t</a> { <br />
-&#160;&#160;<a class="el" href="adc_8h.html#aafc4060027875f8fe46242b0656d7814a147d6572d6e33ffb7c67171ded3ff74c">swr_bridge_rev</a> = 0x0
+&#160;&#160;<a class="el" href="adc_8h.html#aafc4060027875f8fe46242b0656d7814a147d6572d6e33ffb7c67171ded3ff74c">swr_bridge_rev</a> = 0x00
 , <br />
-&#160;&#160;<a class="el" href="adc_8h.html#aafc4060027875f8fe46242b0656d7814acfad67f9cbc7a37371ee95fe50aeca31">swr_bridge_fwd</a> = 0x1
+&#160;&#160;<a class="el" href="adc_8h.html#aafc4060027875f8fe46242b0656d7814acfad67f9cbc7a37371ee95fe50aeca31">swr_bridge_fwd</a> = 0x01
 , <br />
 &#160;&#160;<a class="el" href="adc_8h.html#aafc4060027875f8fe46242b0656d7814ab7dd29210090fd58211f210334462325">channel_Temp</a> = 0x1D
 , <br />
@@ -143,11 +146,13 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="adc_8h.html#aafc4060027875f8fe46242b0656d7814aeffb75f5407ff8887f04e694210e231a">channel_FVR</a> = 0x1F
 <br />
  }</td></tr>
+<tr class="memdesc:aafc4060027875f8fe46242b0656d7814"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADC Channel Definitions.  <a href="adc_8h.html#aafc4060027875f8fe46242b0656d7814">More...</a><br /></td></tr>
 <tr class="separator:aafc4060027875f8fe46242b0656d7814"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:structadc__sync__double__result__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8h.html#structadc__sync__double__result__t">adc_sync_double_result_t</a></td></tr>
+<tr class="memdesc:structadc__sync__double__result__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result type of a double ADC conversion.  <a href="adc_8h.html#structadc__sync__double__result__t">More...</a><br /></td></tr>
 <tr class="separator:structadc__sync__double__result__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -190,13 +195,15 @@ Variable Declarations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Result size of an A/D conversion. </p>
 <p >ADC Generated Driver API Header File</p>
 <p >@Company Microchip Technology Inc.</p>
 <p >@File Name <a class="el" href="adc_8h.html">adc.h</a></p>
 <p >@Summary This is the generated header file for the ADC driver using PIC10 / PIC12 / PIC16 / PIC18 MCUs</p>
-<p >@Description This header file provides APIs for driver for ADC. Generation Information : Product Revision : PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.7 Device : PIC16F1938 Driver Version : 2.02 The generated drivers are tested against the following: Compiler : XC8 2.31 and above MPLAB : MPLAB X 5.45 Section: Included Files Section: Data Types Definitions result size of an A/D conversion </p>
+<p >@Description This header file provides APIs for driver for ADC. Generation Information : Product Revision : PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.7 Device : PIC16F1938 Driver Version : 2.02 The generated drivers are tested against the following: Compiler : XC8 2.31 and above MPLAB : MPLAB X 5.45 Section: Data Types Definitions </p>
 
-<p class="definition">Definition at line <a class="el" href="adc_8h_source.html#l00072">72</a> of file <a class="el" href="adc_8h_source.html">adc.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="adc_8h_source.html#l00065">65</a> of file <a class="el" href="adc_8h_source.html">adc.h</a>.</p>
 
 </div>
 </div>
@@ -212,32 +219,36 @@ Variable Declarations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >ADC Channel Definition</p>
-<p >@Summary Defines the channels available for conversion.</p>
-<p >@Description This routine defines the channels that are available for the module to use.</p>
-<p >Remarks: None </p>
+
+<p>ADC Channel Definitions. </p>
+<p >Defines the channels available for conversion. This enumeration defines the channels that are available for the module to use. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aafc4060027875f8fe46242b0656d7814a147d6572d6e33ffb7c67171ded3ff74c" name="aafc4060027875f8fe46242b0656d7814a147d6572d6e33ffb7c67171ded3ff74c"></a>swr_bridge_rev&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aafc4060027875f8fe46242b0656d7814acfad67f9cbc7a37371ee95fe50aeca31" name="aafc4060027875f8fe46242b0656d7814acfad67f9cbc7a37371ee95fe50aeca31"></a>swr_bridge_fwd&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aafc4060027875f8fe46242b0656d7814ab7dd29210090fd58211f210334462325" name="aafc4060027875f8fe46242b0656d7814ab7dd29210090fd58211f210334462325"></a>channel_Temp&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aafc4060027875f8fe46242b0656d7814a1803faf8301d5aa442661259085ccd07" name="aafc4060027875f8fe46242b0656d7814a1803faf8301d5aa442661259085ccd07"></a>channel_DAC&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aafc4060027875f8fe46242b0656d7814aeffb75f5407ff8887f04e694210e231a" name="aafc4060027875f8fe46242b0656d7814aeffb75f5407ff8887f04e694210e231a"></a>channel_FVR&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aafc4060027875f8fe46242b0656d7814a147d6572d6e33ffb7c67171ded3ff74c" name="aafc4060027875f8fe46242b0656d7814a147d6572d6e33ffb7c67171ded3ff74c"></a>swr_bridge_rev&#160;</td><td class="fielddoc"><p >This channel measures the <b>reverse</b> power across the SWR bridge </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aafc4060027875f8fe46242b0656d7814acfad67f9cbc7a37371ee95fe50aeca31" name="aafc4060027875f8fe46242b0656d7814acfad67f9cbc7a37371ee95fe50aeca31"></a>swr_bridge_fwd&#160;</td><td class="fielddoc"><p >This channel measures the <b>forward</b> power across the SWR bridge </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aafc4060027875f8fe46242b0656d7814ab7dd29210090fd58211f210334462325" name="aafc4060027875f8fe46242b0656d7814ab7dd29210090fd58211f210334462325"></a>channel_Temp&#160;</td><td class="fielddoc"><p >This channel measures the <em>internal</em> <b>temperature</b> sensor value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aafc4060027875f8fe46242b0656d7814a1803faf8301d5aa442661259085ccd07" name="aafc4060027875f8fe46242b0656d7814a1803faf8301d5aa442661259085ccd07"></a>channel_DAC&#160;</td><td class="fielddoc"><p >This channel measures the <em>internal</em> <b>DAC</b> (digital-to-analog converter) value </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aafc4060027875f8fe46242b0656d7814aeffb75f5407ff8887f04e694210e231a" name="aafc4060027875f8fe46242b0656d7814aeffb75f5407ff8887f04e694210e231a"></a>channel_FVR&#160;</td><td class="fielddoc"><p >This channel measures the <em>internal</em> <b>FVR</b> (fixed-voltage reference) value </p>
+</td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="adc_8h_source.html#l00095">95</a> of file <a class="el" href="adc_8h_source.html">adc.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>{</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_enumvalue" href="adc_8h.html#aafc4060027875f8fe46242b0656d7814a147d6572d6e33ffb7c67171ded3ff74c">swr_bridge_rev</a> =  0x0,</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_enumvalue" href="adc_8h.html#aafc4060027875f8fe46242b0656d7814acfad67f9cbc7a37371ee95fe50aeca31">swr_bridge_fwd</a> =  0x1,</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <a class="code hl_enumvalue" href="adc_8h.html#aafc4060027875f8fe46242b0656d7814ab7dd29210090fd58211f210334462325">channel_Temp</a> =  0x1D,</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <a class="code hl_enumvalue" href="adc_8h.html#aafc4060027875f8fe46242b0656d7814a1803faf8301d5aa442661259085ccd07">channel_DAC</a> =  0x1E,</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <a class="code hl_enumvalue" href="adc_8h.html#aafc4060027875f8fe46242b0656d7814aeffb75f5407ff8887f04e694210e231a">channel_FVR</a> =  0x1F</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>} <a class="code hl_enumeration" href="adc_8h.html#aafc4060027875f8fe46242b0656d7814">adc_channel_t</a>;</div>
-<div class="ttc" id="aadc_8h_html_aafc4060027875f8fe46242b0656d7814"><div class="ttname"><a href="adc_8h.html#aafc4060027875f8fe46242b0656d7814">adc_channel_t</a></div><div class="ttdeci">adc_channel_t</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00095">adc.h:96</a></div></div>
-<div class="ttc" id="aadc_8h_html_aafc4060027875f8fe46242b0656d7814a147d6572d6e33ffb7c67171ded3ff74c"><div class="ttname"><a href="adc_8h.html#aafc4060027875f8fe46242b0656d7814a147d6572d6e33ffb7c67171ded3ff74c">swr_bridge_rev</a></div><div class="ttdeci">@ swr_bridge_rev</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00097">adc.h:97</a></div></div>
-<div class="ttc" id="aadc_8h_html_aafc4060027875f8fe46242b0656d7814a1803faf8301d5aa442661259085ccd07"><div class="ttname"><a href="adc_8h.html#aafc4060027875f8fe46242b0656d7814a1803faf8301d5aa442661259085ccd07">channel_DAC</a></div><div class="ttdeci">@ channel_DAC</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00100">adc.h:100</a></div></div>
-<div class="ttc" id="aadc_8h_html_aafc4060027875f8fe46242b0656d7814ab7dd29210090fd58211f210334462325"><div class="ttname"><a href="adc_8h.html#aafc4060027875f8fe46242b0656d7814ab7dd29210090fd58211f210334462325">channel_Temp</a></div><div class="ttdeci">@ channel_Temp</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00099">adc.h:99</a></div></div>
-<div class="ttc" id="aadc_8h_html_aafc4060027875f8fe46242b0656d7814acfad67f9cbc7a37371ee95fe50aeca31"><div class="ttname"><a href="adc_8h.html#aafc4060027875f8fe46242b0656d7814acfad67f9cbc7a37371ee95fe50aeca31">swr_bridge_fwd</a></div><div class="ttdeci">@ swr_bridge_fwd</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00098">adc.h:98</a></div></div>
-<div class="ttc" id="aadc_8h_html_aafc4060027875f8fe46242b0656d7814aeffb75f5407ff8887f04e694210e231a"><div class="ttname"><a href="adc_8h.html#aafc4060027875f8fe46242b0656d7814aeffb75f5407ff8887f04e694210e231a">channel_FVR</a></div><div class="ttdeci">@ channel_FVR</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00102">adc.h:101</a></div></div>
+<p class="definition">Definition at line <a class="el" href="adc_8h_source.html#l00079">79</a> of file <a class="el" href="adc_8h_source.html">adc.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>             {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code hl_enumvalue" href="adc_8h.html#aafc4060027875f8fe46242b0656d7814a147d6572d6e33ffb7c67171ded3ff74c">swr_bridge_rev</a> = 0x00,      </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_enumvalue" href="adc_8h.html#aafc4060027875f8fe46242b0656d7814acfad67f9cbc7a37371ee95fe50aeca31">swr_bridge_fwd</a> = 0x01,      </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_enumvalue" href="adc_8h.html#aafc4060027875f8fe46242b0656d7814ab7dd29210090fd58211f210334462325">channel_Temp</a> = 0x1D,        </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_enumvalue" href="adc_8h.html#aafc4060027875f8fe46242b0656d7814a1803faf8301d5aa442661259085ccd07">channel_DAC</a> = 0x1E,         </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_enumvalue" href="adc_8h.html#aafc4060027875f8fe46242b0656d7814aeffb75f5407ff8887f04e694210e231a">channel_FVR</a> = 0x1F          </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>} <a class="code hl_enumeration" href="adc_8h.html#aafc4060027875f8fe46242b0656d7814">adc_channel_t</a>;</div>
+<div class="ttc" id="aadc_8h_html_aafc4060027875f8fe46242b0656d7814"><div class="ttname"><a href="adc_8h.html#aafc4060027875f8fe46242b0656d7814">adc_channel_t</a></div><div class="ttdeci">adc_channel_t</div><div class="ttdoc">ADC Channel Definitions.</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00079">adc.h:79</a></div></div>
+<div class="ttc" id="aadc_8h_html_aafc4060027875f8fe46242b0656d7814a147d6572d6e33ffb7c67171ded3ff74c"><div class="ttname"><a href="adc_8h.html#aafc4060027875f8fe46242b0656d7814a147d6572d6e33ffb7c67171ded3ff74c">swr_bridge_rev</a></div><div class="ttdeci">@ swr_bridge_rev</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00080">adc.h:80</a></div></div>
+<div class="ttc" id="aadc_8h_html_aafc4060027875f8fe46242b0656d7814a1803faf8301d5aa442661259085ccd07"><div class="ttname"><a href="adc_8h.html#aafc4060027875f8fe46242b0656d7814a1803faf8301d5aa442661259085ccd07">channel_DAC</a></div><div class="ttdeci">@ channel_DAC</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00083">adc.h:83</a></div></div>
+<div class="ttc" id="aadc_8h_html_aafc4060027875f8fe46242b0656d7814ab7dd29210090fd58211f210334462325"><div class="ttname"><a href="adc_8h.html#aafc4060027875f8fe46242b0656d7814ab7dd29210090fd58211f210334462325">channel_Temp</a></div><div class="ttdeci">@ channel_Temp</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00082">adc.h:82</a></div></div>
+<div class="ttc" id="aadc_8h_html_aafc4060027875f8fe46242b0656d7814acfad67f9cbc7a37371ee95fe50aeca31"><div class="ttname"><a href="adc_8h.html#aafc4060027875f8fe46242b0656d7814acfad67f9cbc7a37371ee95fe50aeca31">swr_bridge_fwd</a></div><div class="ttdeci">@ swr_bridge_fwd</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00081">adc.h:81</a></div></div>
+<div class="ttc" id="aadc_8h_html_aafc4060027875f8fe46242b0656d7814aeffb75f5407ff8887f04e694210e231a"><div class="ttname"><a href="adc_8h.html#aafc4060027875f8fe46242b0656d7814aeffb75f5407ff8887f04e694210e231a">channel_FVR</a></div><div class="ttdeci">@ channel_FVR</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00085">adc.h:84</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -253,15 +264,16 @@ Variable Declarations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock"><p >result type of a Double ADC conversion </p>
+<div class="textblock"><p >Result type of a double ADC conversion. </p>
 
-<p class="definition">Definition at line <a class="el" href="adc_8h_source.html#l00077">77</a> of file <a class="el" href="adc_8h_source.html">adc.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="adc_8h_source.html#l00068">68</a> of file <a class="el" href="adc_8h_source.html">adc.h</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for adc_sync_double_result_t:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structadc__sync__double__result__t__coll__graph.svg" width="174" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structadc__sync__double__result__t__coll__graph.svg" width="174" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
@@ -303,19 +315,20 @@ adcResult2</td>
 <p >@Param None</p>
 <p >@Returns None </p>
 
-<p class="definition">Definition at line <a class="el" href="mcc__generated__files_2adc_8c_source.html#l00160">160</a> of file <a class="el" href="mcc__generated__files_2adc_8c_source.html">adc.c</a>.</p>
-<div class="fragment"><div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                                      {</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="comment">// add your ADC interrupt custom code</span></div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="comment">// or set custom function using ADC_SetInterruptHandler()</span></div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>}</div>
+<p class="definition">Definition at line <a class="el" href="adc_8c_source.html#l00103">103</a> of file <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+<div class="fragment"><div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                                      {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="comment">// add your ADC interrupt custom code</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="comment">// or set custom function using ADC_SetInterruptHandler()</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="mcc__generated__files_2adc_8c_source.html#l00067">ADC_Initialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="adc_8c_source.html#l00022">ADC_Initialize()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="adc_8h_a93877141ffb34f4b2090baab6554a001_icgraph.svg" width="606" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="adc_8h_a93877141ffb34f4b2090baab6554a001_icgraph.svg" width="340" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -344,32 +357,30 @@ adcResult2</td>
 <p ><code> <a class="el" href="adc_8h.html#ab0e0ea1662a8e789547210a2d33127e1">ADC_Initialize()</a>;</code></p>
 <p ><code> conversion = ADC_GetConversion(AN1_Channel); </code> </p>
 
-<p class="definition">Definition at line <a class="el" href="mcc__generated__files_2adc_8c_source.html#l00117">117</a> of file <a class="el" href="mcc__generated__files_2adc_8c_source.html">adc.c</a>.</p>
-<div class="fragment"><div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>{</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="comment">// select the A/D channel</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    ADCON0bits.CHS = channel;    </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="comment">// Turn on the ADC module</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    ADCON0bits.ADON = 1;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="comment">// Acquisition time delay</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    __delay_us(<a class="code hl_define" href="mcc__generated__files_2adc_8c.html#a7edf990d9e0cd259877e405fecfaa611">ACQ_US_DELAY</a>);</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="comment">// Start the conversion</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    ADCON0bits.GO_nDONE = 1;</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="comment">// Wait for the conversion to finish</span></div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordflow">while</span> (ADCON0bits.GO_nDONE)</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    {</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    }</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="comment">// Conversion finished, return the result</span></div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keywordflow">return</span> ((<a class="code hl_typedef" href="adc_8h.html#ac5362ae65441a5027b4b9b1bf1b573aa">adc_result_t</a>)((ADRESH &lt;&lt; 8) + ADRESL));</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>}</div>
-<div class="ttc" id="aadc_8h_html_ac5362ae65441a5027b4b9b1bf1b573aa"><div class="ttname"><a href="adc_8h.html#ac5362ae65441a5027b4b9b1bf1b573aa">adc_result_t</a></div><div class="ttdeci">uint16_t adc_result_t</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00072">adc.h:72</a></div></div>
-<div class="ttc" id="amcc__generated__files_2adc_8c_html_a7edf990d9e0cd259877e405fecfaa611"><div class="ttname"><a href="mcc__generated__files_2adc_8c.html#a7edf990d9e0cd259877e405fecfaa611">ACQ_US_DELAY</a></div><div class="ttdeci">#define ACQ_US_DELAY</div><div class="ttdef"><b>Definition:</b> <a href="mcc__generated__files_2adc_8c_source.html#l00059">adc.c:59</a></div></div>
+<p class="definition">Definition at line <a class="el" href="adc_8c_source.html#l00066">66</a> of file <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+<div class="fragment"><div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                                                      {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="comment">// select the A/D channel</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    ADCON0bits.CHS = channel;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// Turn on the ADC module</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    ADCON0bits.ADON = 1;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">// Acquisition time delay</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    __delay_us(<a class="code hl_define" href="adc_8c.html#a7edf990d9e0cd259877e405fecfaa611">ACQ_US_DELAY</a>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">// Start the conversion</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    ADCON0bits.GO_nDONE = 1;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="comment">// Wait for the conversion to finish</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">while</span> (ADCON0bits.GO_nDONE);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">// Conversion finished, return the result</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">return</span> ((<a class="code hl_typedef" href="adc_8h.html#ac5362ae65441a5027b4b9b1bf1b573aa">adc_result_t</a>)((ADRESH &lt;&lt; 8) + ADRESL));</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>}</div>
+<div class="ttc" id="aadc_8c_html_a7edf990d9e0cd259877e405fecfaa611"><div class="ttname"><a href="adc_8c.html#a7edf990d9e0cd259877e405fecfaa611">ACQ_US_DELAY</a></div><div class="ttdeci">#define ACQ_US_DELAY</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00011">adc.c:11</a></div></div>
+<div class="ttc" id="aadc_8h_html_ac5362ae65441a5027b4b9b1bf1b573aa"><div class="ttname"><a href="adc_8h.html#ac5362ae65441a5027b4b9b1bf1b573aa">adc_result_t</a></div><div class="ttdeci">uint16_t adc_result_t</div><div class="ttdoc">Result size of an A/D conversion.</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00065">adc.h:65</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mcc__generated__files_2adc_8c_source.html#l00059">ACQ_US_DELAY</a>.</p>
+<p class="reference">References <a class="el" href="adc_8c_source.html#l00011">ACQ_US_DELAY</a>.</p>
 
 </div>
 </div>
@@ -398,11 +409,11 @@ adcResult2</td>
 <p ><code> while(ADC_IsConversionDone());</code></p>
 <p ><code> convertedValue = <a class="el" href="adc_8h.html#a9650956bd92194e1b9f0bfd5bb2d73dd">ADC_GetConversionResult()</a>; </code> </p>
 
-<p class="definition">Definition at line <a class="el" href="mcc__generated__files_2adc_8c_source.html#l00111">111</a> of file <a class="el" href="mcc__generated__files_2adc_8c_source.html">adc.c</a>.</p>
-<div class="fragment"><div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>{</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="comment">// Conversion finished, return the result</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordflow">return</span> ((<a class="code hl_typedef" href="adc_8h.html#ac5362ae65441a5027b4b9b1bf1b573aa">adc_result_t</a>)((ADRESH &lt;&lt; 8) + ADRESL));</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}</div>
+<p class="definition">Definition at line <a class="el" href="adc_8c_source.html#l00061">61</a> of file <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+<div class="fragment"><div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                                           {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// Conversion finished, return the result</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">return</span> ((<a class="code hl_typedef" href="adc_8h.html#ac5362ae65441a5027b4b9b1bf1b573aa">adc_result_t</a>)((ADRESH &lt;&lt; 8) + ADRESL));</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -428,50 +439,42 @@ adcResult2</td>
 <p >@Returns None</p>
 <p >@Comment</p>
 <p >@Example <code> uint16_t convertedValue;</code></p>
-<p ><code> <a class="el" href="mcc__generated__files_2adc_8c.html#ab0e0ea1662a8e789547210a2d33127e1">ADC_Initialize()</a>; convertedValue = <a class="el" href="mcc__generated__files_2adc_8c.html#a9650956bd92194e1b9f0bfd5bb2d73dd">ADC_GetConversionResult()</a>; </code></p>
+<p ><code> <a class="el" href="adc_8c.html#ab0e0ea1662a8e789547210a2d33127e1">ADC_Initialize()</a>; convertedValue = <a class="el" href="adc_8c.html#a9650956bd92194e1b9f0bfd5bb2d73dd">ADC_GetConversionResult()</a>; </code></p>
 <p >Section: ADC Module APIs </p>
 
-<p class="definition">Definition at line <a class="el" href="mcc__generated__files_2adc_8c_source.html#l00067">67</a> of file <a class="el" href="mcc__generated__files_2adc_8c_source.html">adc.c</a>.</p>
-<div class="fragment"><div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>{</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="comment">// set the ADC to the options selected in the User Interface</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">// ADFM left; ADNREF VSS; ADPREF FVR; ADCS FOSC/16; </span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    ADCON1 = 0x53;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">// ADRESL 0; </span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    ADRESL = 0x00;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="comment">// ADRESH 0; </span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    ADRESH = 0x00;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="comment">// GO_nDONE stop; ADON enabled; CHS AN0; </span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    ADCON0 = 0x01;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="comment">// Enabling ADC interrupt.</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    PIE1bits.ADIE = 1;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="comment">// Set Default Interrupt Handler</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <a class="code hl_function" href="mcc__generated__files_2adc_8c.html#a853bf4f29c400aa205e0474a03f64e32">ADC_SetInterruptHandler</a>(<a class="code hl_function" href="mcc__generated__files_2adc_8c.html#a93877141ffb34f4b2090baab6554a001">ADC_DefaultInterruptHandler</a>);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
-<div class="ttc" id="amcc__generated__files_2adc_8c_html_a853bf4f29c400aa205e0474a03f64e32"><div class="ttname"><a href="mcc__generated__files_2adc_8c.html#a853bf4f29c400aa205e0474a03f64e32">ADC_SetInterruptHandler</a></div><div class="ttdeci">void ADC_SetInterruptHandler(void(*InterruptHandler)(void))</div><div class="ttdef"><b>Definition:</b> <a href="mcc__generated__files_2adc_8c_source.html#l00156">adc.c:156</a></div></div>
-<div class="ttc" id="amcc__generated__files_2adc_8c_html_a93877141ffb34f4b2090baab6554a001"><div class="ttname"><a href="mcc__generated__files_2adc_8c.html#a93877141ffb34f4b2090baab6554a001">ADC_DefaultInterruptHandler</a></div><div class="ttdeci">void ADC_DefaultInterruptHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="mcc__generated__files_2adc_8c_source.html#l00160">adc.c:160</a></div></div>
+<p class="definition">Definition at line <a class="el" href="adc_8c_source.html#l00022">22</a> of file <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+<div class="fragment"><div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                          {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">// set the ADC to the options selected in the User Interface</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">// ADFM left; ADNREF VSS; ADPREF FVR; ADCS FOSC/2;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    ADCON1 = 0x03;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="comment">// ADRESL 0;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    ADRESL = 0x00;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">// ADRESH 0;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    ADRESH = 0x00;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">// GO_nDONE stop; ADON enabled; CHS AN0;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    ADCON0 = 0x01;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">// Enabling ADC interrupt.</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    PIE1bits.ADIE = 1;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">// Set Default Interrupt Handler</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_function" href="adc_8c.html#a853bf4f29c400aa205e0474a03f64e32">ADC_SetInterruptHandler</a>(<a class="code hl_function" href="adc_8c.html#a93877141ffb34f4b2090baab6554a001">ADC_DefaultInterruptHandler</a>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
+<div class="ttc" id="aadc_8c_html_a853bf4f29c400aa205e0474a03f64e32"><div class="ttname"><a href="adc_8c.html#a853bf4f29c400aa205e0474a03f64e32">ADC_SetInterruptHandler</a></div><div class="ttdeci">void ADC_SetInterruptHandler(void(*InterruptHandler)(void))</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00099">adc.c:99</a></div></div>
+<div class="ttc" id="aadc_8c_html_a93877141ffb34f4b2090baab6554a001"><div class="ttname"><a href="adc_8c.html#a93877141ffb34f4b2090baab6554a001">ADC_DefaultInterruptHandler</a></div><div class="ttdeci">void ADC_DefaultInterruptHandler(void)</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00103">adc.c:103</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mcc__generated__files_2adc_8c_source.html#l00160">ADC_DefaultInterruptHandler()</a>, and <a class="el" href="mcc__generated__files_2adc_8c_source.html#l00156">ADC_SetInterruptHandler()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="mcc_8c_source.html#l00050">SYSTEM_Initialize()</a>.</p>
+<p class="reference">References <a class="el" href="adc_8c_source.html#l00103">ADC_DefaultInterruptHandler()</a>, and <a class="el" href="adc_8c_source.html#l00099">ADC_SetInterruptHandler()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="adc_8h_ab0e0ea1662a8e789547210a2d33127e1_cgraph.svg" width="340" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="adc_8h_ab0e0ea1662a8e789547210a2d33127e1_cgraph.svg" width="340" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="adc_8h_ab0e0ea1662a8e789547210a2d33127e1_icgraph.svg" width="375" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -500,11 +503,11 @@ adcResult2</td>
 <p ><code> <a class="el" href="adc_8h.html#ab0e0ea1662a8e789547210a2d33127e1">ADC_Initialize()</a>; <a class="el" href="adc_8h.html#af96ee69b063edcebc656d0ca0450c12c">ADC_StartConversion()</a>;</code></p>
 <p ><code> while(!ADC_IsConversionDone()); convertedValue = <a class="el" href="adc_8h.html#a9650956bd92194e1b9f0bfd5bb2d73dd">ADC_GetConversionResult()</a>; </code> </p>
 
-<p class="definition">Definition at line <a class="el" href="mcc__generated__files_2adc_8c_source.html#l00105">105</a> of file <a class="el" href="mcc__generated__files_2adc_8c_source.html">adc.c</a>.</p>
-<div class="fragment"><div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>{</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="comment">// Start the conversion</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>   <span class="keywordflow">return</span> ((<span class="keywordtype">bool</span>)(!ADCON0bits.GO_nDONE));</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
+<p class="definition">Definition at line <a class="el" href="adc_8c_source.html#l00056">56</a> of file <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+<div class="fragment"><div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                                {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// Start the conversion</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">return</span> ((<span class="keywordtype">bool</span>)(!ADCON0bits.GO_nDONE));</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -528,28 +531,18 @@ adcResult2</td>
 <p >@Returns None</p>
 <p >@Param None </p>
 
-<p class="definition">Definition at line <a class="el" href="mcc__generated__files_2adc_8c_source.html#l00145">145</a> of file <a class="el" href="mcc__generated__files_2adc_8c_source.html">adc.c</a>.</p>
-<div class="fragment"><div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>{</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="comment">// Clear the ADC interrupt flag</span></div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    PIR1bits.ADIF = 0;</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    </div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="mcc__generated__files_2adc_8c.html#afd07ad436449919718eb6b73351335f6">ADC_InterruptHandler</a>)</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    {</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <a class="code hl_variable" href="mcc__generated__files_2adc_8c.html#afd07ad436449919718eb6b73351335f6">ADC_InterruptHandler</a>();</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    }</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>}</div>
-<div class="ttc" id="amcc__generated__files_2adc_8c_html_afd07ad436449919718eb6b73351335f6"><div class="ttname"><a href="mcc__generated__files_2adc_8c.html#afd07ad436449919718eb6b73351335f6">ADC_InterruptHandler</a></div><div class="ttdeci">void(* ADC_InterruptHandler)(void)</div><div class="ttdef"><b>Definition:</b> <a href="mcc__generated__files_2adc_8c_source.html#l00061">adc.c:61</a></div></div>
+<p class="definition">Definition at line <a class="el" href="adc_8c_source.html#l00090">90</a> of file <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+<div class="fragment"><div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                   {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="comment">// Clear the ADC interrupt flag</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    PIR1bits.ADIF = 0;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="adc_8c.html#afd07ad436449919718eb6b73351335f6">ADC_InterruptHandler</a>) {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <a class="code hl_variable" href="adc_8c.html#afd07ad436449919718eb6b73351335f6">ADC_InterruptHandler</a>();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+<div class="ttc" id="aadc_8c_html_afd07ad436449919718eb6b73351335f6"><div class="ttname"><a href="adc_8c.html#afd07ad436449919718eb6b73351335f6">ADC_InterruptHandler</a></div><div class="ttdeci">void(* ADC_InterruptHandler)(void)</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00014">adc.c:14</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mcc__generated__files_2adc_8c_source.html#l00061">ADC_InterruptHandler</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="interrupt__manager_8c_source.html#l00052">__interrupt()</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="adc_8h_a6ed0a222ba29d6365791b9cc27d9af14_icgraph.svg" width="208" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="reference">References <a class="el" href="adc_8c_source.html#l00014">ADC_InterruptHandler</a>.</p>
 
 </div>
 </div>
@@ -576,13 +569,13 @@ adcResult2</td>
 <p >@Example <code> uint16_t convertedValue;</code></p>
 <p ><code> <a class="el" href="adc_8h.html#ab0e0ea1662a8e789547210a2d33127e1">ADC_Initialize()</a>; ADC_SelectChannel(AN1_Channel); <a class="el" href="adc_8h.html#af96ee69b063edcebc656d0ca0450c12c">ADC_StartConversion()</a>; convertedValue = <a class="el" href="adc_8h.html#a9650956bd92194e1b9f0bfd5bb2d73dd">ADC_GetConversionResult()</a>; </code> </p>
 
-<p class="definition">Definition at line <a class="el" href="mcc__generated__files_2adc_8c_source.html#l00090">90</a> of file <a class="el" href="mcc__generated__files_2adc_8c_source.html">adc.c</a>.</p>
-<div class="fragment"><div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>{</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="comment">// select the A/D channel</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    ADCON0bits.CHS = channel;    </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="comment">// Turn on the ADC module</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    ADCON0bits.ADON = 1;  </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}</div>
+<p class="definition">Definition at line <a class="el" href="adc_8c_source.html#l00044">44</a> of file <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+<div class="fragment"><div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                                              {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// select the A/D channel</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    ADCON0bits.CHS = channel;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">// Turn on the ADC module</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    ADCON0bits.ADON = 1;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -607,20 +600,21 @@ adcResult2</td>
 <p >@Param Address of function to be set</p>
 <p >@Returns None </p>
 
-<p class="definition">Definition at line <a class="el" href="mcc__generated__files_2adc_8c_source.html#l00156">156</a> of file <a class="el" href="mcc__generated__files_2adc_8c_source.html">adc.c</a>.</p>
-<div class="fragment"><div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                                                             {</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <a class="code hl_variable" href="mcc__generated__files_2adc_8c.html#afd07ad436449919718eb6b73351335f6">ADC_InterruptHandler</a> = InterruptHandler;</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>}</div>
+<p class="definition">Definition at line <a class="el" href="adc_8c_source.html#l00099">99</a> of file <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+<div class="fragment"><div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                                                            {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <a class="code hl_variable" href="adc_8c.html#afd07ad436449919718eb6b73351335f6">ADC_InterruptHandler</a> = InterruptHandler;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mcc__generated__files_2adc_8c_source.html#l00061">ADC_InterruptHandler</a>.</p>
+<p class="reference">References <a class="el" href="adc_8c_source.html#l00014">ADC_InterruptHandler</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mcc__generated__files_2adc_8c_source.html#l00067">ADC_Initialize()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="adc_8c_source.html#l00022">ADC_Initialize()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="adc_8h_a853bf4f29c400aa205e0474a03f64e32_icgraph.svg" width="582" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="adc_8h_a853bf4f29c400aa205e0474a03f64e32_icgraph.svg" width="316" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -646,14 +640,13 @@ adcResult2</td>
 <p >@Returns None</p>
 <p >@Param None</p>
 <p >@Example <code> uint16_t convertedValue;</code></p>
-<p ><code> <a class="el" href="adc_8h.html#ab0e0ea1662a8e789547210a2d33127e1">ADC_Initialize()</a>; <br  />
- <a class="el" href="adc_8h.html#af96ee69b063edcebc656d0ca0450c12c">ADC_StartConversion()</a>; convertedValue = <a class="el" href="adc_8h.html#a9650956bd92194e1b9f0bfd5bb2d73dd">ADC_GetConversionResult()</a>; </code> </p>
+<p ><code> <a class="el" href="adc_8h.html#ab0e0ea1662a8e789547210a2d33127e1">ADC_Initialize()</a>; <a class="el" href="adc_8h.html#af96ee69b063edcebc656d0ca0450c12c">ADC_StartConversion()</a>; convertedValue = <a class="el" href="adc_8h.html#a9650956bd92194e1b9f0bfd5bb2d73dd">ADC_GetConversionResult()</a>; </code> </p>
 
-<p class="definition">Definition at line <a class="el" href="mcc__generated__files_2adc_8c_source.html#l00098">98</a> of file <a class="el" href="mcc__generated__files_2adc_8c_source.html">adc.c</a>.</p>
-<div class="fragment"><div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>{</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="comment">// Start the conversion</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    ADCON0bits.GO_nDONE = 1;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
+<p class="definition">Definition at line <a class="el" href="adc_8c_source.html#l00051">51</a> of file <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+<div class="fragment"><div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                               {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// Start the conversion</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    ADCON0bits.GO_nDONE = 1;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -678,13 +671,12 @@ adcResult2</td>
 <p >@Returns None</p>
 <p >@Param None</p>
 <p >@Example <code> uint16_t convertedValue;</code></p>
-<p ><code> <a class="el" href="adc_8h.html#ab0e0ea1662a8e789547210a2d33127e1">ADC_Initialize()</a>; <br  />
- <a class="el" href="adc_8h.html#af96ee69b063edcebc656d0ca0450c12c">ADC_StartConversion()</a>; ADC_temperatureAcquisitionDelay(); convertedValue = <a class="el" href="adc_8h.html#a9650956bd92194e1b9f0bfd5bb2d73dd">ADC_GetConversionResult()</a>; </code> </p>
+<p ><code> <a class="el" href="adc_8h.html#ab0e0ea1662a8e789547210a2d33127e1">ADC_Initialize()</a>; <a class="el" href="adc_8h.html#af96ee69b063edcebc656d0ca0450c12c">ADC_StartConversion()</a>; ADC_temperatureAcquisitionDelay(); convertedValue = <a class="el" href="adc_8h.html#a9650956bd92194e1b9f0bfd5bb2d73dd">ADC_GetConversionResult()</a>; </code> </p>
 
-<p class="definition">Definition at line <a class="el" href="mcc__generated__files_2adc_8c_source.html#l00140">140</a> of file <a class="el" href="mcc__generated__files_2adc_8c_source.html">adc.c</a>.</p>
-<div class="fragment"><div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>{</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    __delay_us(200);</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>}</div>
+<p class="definition">Definition at line <a class="el" href="adc_8c_source.html#l00086">86</a> of file <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+<div class="fragment"><div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                                           {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    __delay_us(200);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -718,9 +710,9 @@ adcResult2</td>
 <p >@Param None</p>
 <p >@Returns None </p>
 
-<p class="definition">Definition at line <a class="el" href="mcc__generated__files_2adc_8c_source.html#l00061">61</a> of file <a class="el" href="mcc__generated__files_2adc_8c_source.html">adc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="adc_8c_source.html#l00014">14</a> of file <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mcc__generated__files_2adc_8c_source.html#l00145">ADC_ISR()</a>, and <a class="el" href="mcc__generated__files_2adc_8c_source.html#l00156">ADC_SetInterruptHandler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="adc_8c_source.html#l00090">ADC_ISR()</a>, and <a class="el" href="adc_8c_source.html#l00099">ADC_SetInterruptHandler()</a>.</p>
 
 </div>
 </div>
@@ -730,8 +722,8 @@ adcResult2</td>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0ad8aa10ae8c15a00cc43e117933779f.html">mcc_generated_files</a></li><li class="navelem"><a class="el" href="adc_8h.html">adc.h</a></li>
-    <li class="footer">Generated on Fri Apr 22 2022 10:03:49 for ATU100_PIC16F1938 by
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="adc_8h.html">adc.h</a></li>
+    <li class="footer">Generated on Sat Apr 23 2022 13:27:54 for ATU100_PIC16F1938 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.2 </li>
   </ul>

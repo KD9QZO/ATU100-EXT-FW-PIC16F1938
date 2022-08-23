@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['display_5ftype_5ft_0',['display_type_t',['../extratypes_8h.html#a0371ce8588bab14349e8e19dea2473e1',1,'extratypes.h']]]
+  ['adc_5fchannel_5ft_0',['adc_channel_t',['../adc_8h.html#aafc4060027875f8fe46242b0656d7814',1,'adc.h']]]
 ];

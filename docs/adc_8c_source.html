@@ -100,18 +100,18 @@ $(document).ready(function(){initNavTree('adc_8c_source.html',''); initResizable
 <div class="contents">
 <a href="adc_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;xc.h&gt;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;adc.h&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="adc_8h.html">adc.h</a>&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;device_config.h&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="adc_8c.html#a7edf990d9e0cd259877e405fecfaa611">   11</a></span><span class="preprocessor">#define ACQ_US_DELAY 5</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="adc_8c.html#afd07ad436449919718eb6b73351335f6">   14</a></span>void (*<a class="code hl_variable" href="adc_8c.html#afd07ad436449919718eb6b73351335f6">ADC_InterruptHandler</a>)(void);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="adc_8h.html#afd07ad436449919718eb6b73351335f6">   14</a></span>void (*<a class="code hl_variable" href="adc_8c.html#afd07ad436449919718eb6b73351335f6">ADC_InterruptHandler</a>)(void);</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="adc_8c.html#ab0e0ea1662a8e789547210a2d33127e1">   22</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="adc_8c.html#ab0e0ea1662a8e789547210a2d33127e1">ADC_Initialize</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="adc_8h.html#ab0e0ea1662a8e789547210a2d33127e1">   22</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="adc_8c.html#ab0e0ea1662a8e789547210a2d33127e1">ADC_Initialize</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">// set the ADC to the options selected in the User Interface</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">// ADFM left; ADNREF VSS; ADPREF FVR; ADCS FOSC/2;</span></div>
@@ -133,29 +133,29 @@ $(document).ready(function(){initNavTree('adc_8c_source.html',''); initResizable
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_function" href="adc_8c.html#a853bf4f29c400aa205e0474a03f64e32">ADC_SetInterruptHandler</a>(<a class="code hl_function" href="adc_8c.html#a93877141ffb34f4b2090baab6554a001">ADC_DefaultInterruptHandler</a>);</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="adc_8c.html#a25c0a0a9fe2bdba070f9945ca641b5e0">   44</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="adc_8c.html#a25c0a0a9fe2bdba070f9945ca641b5e0">ADC_SelectChannel</a>(adc_channel_t channel) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="adc_8h.html#a25c0a0a9fe2bdba070f9945ca641b5e0">   44</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="adc_8c.html#a25c0a0a9fe2bdba070f9945ca641b5e0">ADC_SelectChannel</a>(<a class="code hl_enumeration" href="adc_8h.html#aafc4060027875f8fe46242b0656d7814">adc_channel_t</a> channel) {</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// select the A/D channel</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    ADCON0bits.CHS = channel;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">// Turn on the ADC module</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    ADCON0bits.ADON = 1;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="adc_8c.html#af96ee69b063edcebc656d0ca0450c12c">   51</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="adc_8c.html#af96ee69b063edcebc656d0ca0450c12c">ADC_StartConversion</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="adc_8h.html#af96ee69b063edcebc656d0ca0450c12c">   51</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="adc_8c.html#af96ee69b063edcebc656d0ca0450c12c">ADC_StartConversion</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// Start the conversion</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    ADCON0bits.GO_nDONE = 1;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="adc_8c.html#ad5c10c1709aeacf08e783c3ea174463b">   56</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="adc_8c.html#ad5c10c1709aeacf08e783c3ea174463b">ADC_IsConversionDone</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="adc_8h.html#ad5c10c1709aeacf08e783c3ea174463b">   56</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="adc_8c.html#ad5c10c1709aeacf08e783c3ea174463b">ADC_IsConversionDone</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// Start the conversion</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">return</span> ((<span class="keywordtype">bool</span>)(!ADCON0bits.GO_nDONE));</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="adc_8c.html#a9650956bd92194e1b9f0bfd5bb2d73dd">   61</a></span>adc_result_t <a class="code hl_function" href="adc_8c.html#a9650956bd92194e1b9f0bfd5bb2d73dd">ADC_GetConversionResult</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="adc_8h.html#a9650956bd92194e1b9f0bfd5bb2d73dd">   61</a></span><a class="code hl_typedef" href="adc_8h.html#ac5362ae65441a5027b4b9b1bf1b573aa">adc_result_t</a> <a class="code hl_function" href="adc_8c.html#a9650956bd92194e1b9f0bfd5bb2d73dd">ADC_GetConversionResult</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// Conversion finished, return the result</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">return</span> ((adc_result_t)((ADRESH &lt;&lt; 8) + ADRESL));</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">return</span> ((<a class="code hl_typedef" href="adc_8h.html#ac5362ae65441a5027b4b9b1bf1b573aa">adc_result_t</a>)((ADRESH &lt;&lt; 8) + ADRESL));</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="adc_8c.html#a81501f9b96aa9bb8dbe63b49d0f8e909">   66</a></span>adc_result_t <a class="code hl_function" href="adc_8c.html#a81501f9b96aa9bb8dbe63b49d0f8e909">ADC_GetConversion</a>(adc_channel_t channel) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="adc_8h.html#a81501f9b96aa9bb8dbe63b49d0f8e909">   66</a></span><a class="code hl_typedef" href="adc_8h.html#ac5362ae65441a5027b4b9b1bf1b573aa">adc_result_t</a> <a class="code hl_function" href="adc_8c.html#a81501f9b96aa9bb8dbe63b49d0f8e909">ADC_GetConversion</a>(<a class="code hl_enumeration" href="adc_8h.html#aafc4060027875f8fe46242b0656d7814">adc_channel_t</a> channel) {</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="comment">// select the A/D channel</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    ADCON0bits.CHS = channel;</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
@@ -172,14 +172,14 @@ $(document).ready(function(){initNavTree('adc_8c_source.html',''); initResizable
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">while</span> (ADCON0bits.GO_nDONE);</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">// Conversion finished, return the result</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">return</span> ((adc_result_t)((ADRESH &lt;&lt; 8) + ADRESL));</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">return</span> ((<a class="code hl_typedef" href="adc_8h.html#ac5362ae65441a5027b4b9b1bf1b573aa">adc_result_t</a>)((ADRESH &lt;&lt; 8) + ADRESL));</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>}</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="adc_8c.html#a46bdd78f96c668432d4ff33115c9dcd9">   86</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="adc_8c.html#a46bdd78f96c668432d4ff33115c9dcd9">ADC_TemperatureAcquisitionDelay</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="adc_8h.html#a46bdd78f96c668432d4ff33115c9dcd9">   86</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="adc_8c.html#a46bdd78f96c668432d4ff33115c9dcd9">ADC_TemperatureAcquisitionDelay</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    __delay_us(200);</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="adc_8c.html#a6ed0a222ba29d6365791b9cc27d9af14">   90</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="adc_8c.html#a6ed0a222ba29d6365791b9cc27d9af14">ADC_ISR</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="adc_8h.html#a6ed0a222ba29d6365791b9cc27d9af14">   90</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="adc_8c.html#a6ed0a222ba29d6365791b9cc27d9af14">ADC_ISR</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="comment">// Clear the ADC interrupt flag</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    PIR1bits.ADIF = 0;</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
@@ -188,11 +188,11 @@ $(document).ready(function(){initNavTree('adc_8c_source.html',''); initResizable
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="adc_8c.html#a853bf4f29c400aa205e0474a03f64e32">   99</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="adc_8c.html#a853bf4f29c400aa205e0474a03f64e32">ADC_SetInterruptHandler</a>(<span class="keywordtype">void</span> (*InterruptHandler)(<span class="keywordtype">void</span>)){</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="adc_8h.html#a853bf4f29c400aa205e0474a03f64e32">   99</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="adc_8c.html#a853bf4f29c400aa205e0474a03f64e32">ADC_SetInterruptHandler</a>(<span class="keywordtype">void</span> (*InterruptHandler)(<span class="keywordtype">void</span>)){</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <a class="code hl_variable" href="adc_8c.html#afd07ad436449919718eb6b73351335f6">ADC_InterruptHandler</a> = InterruptHandler;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="adc_8c.html#a93877141ffb34f4b2090baab6554a001">  103</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="adc_8c.html#a93877141ffb34f4b2090baab6554a001">ADC_DefaultInterruptHandler</a>(<span class="keywordtype">void</span>){</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="adc_8h.html#a93877141ffb34f4b2090baab6554a001">  103</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="adc_8c.html#a93877141ffb34f4b2090baab6554a001">ADC_DefaultInterruptHandler</a>(<span class="keywordtype">void</span>){</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="comment">// add your ADC interrupt custom code</span></div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="comment">// or set custom function using ADC_SetInterruptHandler()</span></div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
@@ -208,6 +208,9 @@ $(document).ready(function(){initNavTree('adc_8c_source.html',''); initResizable
 <div class="ttc" id="aadc_8c_html_ad5c10c1709aeacf08e783c3ea174463b"><div class="ttname"><a href="adc_8c.html#ad5c10c1709aeacf08e783c3ea174463b">ADC_IsConversionDone</a></div><div class="ttdeci">bool ADC_IsConversionDone(void)</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00056">adc.c:56</a></div></div>
 <div class="ttc" id="aadc_8c_html_af96ee69b063edcebc656d0ca0450c12c"><div class="ttname"><a href="adc_8c.html#af96ee69b063edcebc656d0ca0450c12c">ADC_StartConversion</a></div><div class="ttdeci">void ADC_StartConversion(void)</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00051">adc.c:51</a></div></div>
 <div class="ttc" id="aadc_8c_html_afd07ad436449919718eb6b73351335f6"><div class="ttname"><a href="adc_8c.html#afd07ad436449919718eb6b73351335f6">ADC_InterruptHandler</a></div><div class="ttdeci">void(* ADC_InterruptHandler)(void)</div><div class="ttdef"><b>Definition:</b> <a href="adc_8c_source.html#l00014">adc.c:14</a></div></div>
+<div class="ttc" id="aadc_8h_html"><div class="ttname"><a href="adc_8h.html">adc.h</a></div></div>
+<div class="ttc" id="aadc_8h_html_aafc4060027875f8fe46242b0656d7814"><div class="ttname"><a href="adc_8h.html#aafc4060027875f8fe46242b0656d7814">adc_channel_t</a></div><div class="ttdeci">adc_channel_t</div><div class="ttdoc">ADC Channel Definitions.</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00079">adc.h:79</a></div></div>
+<div class="ttc" id="aadc_8h_html_ac5362ae65441a5027b4b9b1bf1b573aa"><div class="ttname"><a href="adc_8h.html#ac5362ae65441a5027b4b9b1bf1b573aa">adc_result_t</a></div><div class="ttdeci">uint16_t adc_result_t</div><div class="ttdoc">Result size of an A/D conversion.</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00065">adc.h:65</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
@@ -215,7 +218,7 @@ $(document).ready(function(){initNavTree('adc_8c_source.html',''); initResizable
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="adc_8c.html">adc.c</a></li>
-    <li class="footer">Generated on Fri Apr 22 2022 11:24:50 for ATU100_PIC16F1938 by
+    <li class="footer">Generated on Sat Apr 23 2022 13:27:49 for ATU100_PIC16F1938 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.2 </li>
   </ul>

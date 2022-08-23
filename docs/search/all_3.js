@@ -30,10 +30,13 @@ var searchData=
   ['capacitor_20values_27',['Capacitor Values',['../group__cap__values.html',1,'']]],
   ['capacitor_5fvalues_5ft_28',['capacitor_values_t',['../extratypes_8h.html#structcapacitor__values__t',1,'']]],
   ['caps_29',['caps',['../main_8c.html#afbce3afbf42fc83dac0d6aa82ed1035d',1,'main.c']]],
-  ['clear_5fwdt_30',['CLEAR_WDT',['../common_8h.html#af3b1b3d04cf04a55bc7003d003621565',1,'common.h']]],
-  ['coarse_5fcap_31',['coarse_cap',['../main_8h.html#a740ef1b33bb02cd952ad7d8708999472',1,'main.h']]],
-  ['coarse_5ftune_32',['coarse_tune',['../main_8h.html#a5c7c60c7d70cf76cc52e87722bb0f614',1,'main.h']]],
-  ['common_2eh_33',['common.h',['../common_8h.html',1,'']]],
-  ['correction_34',['correction',['../main_8h.html#ab19e6e081315a9a200394b74d10de395',1,'main.h']]],
-  ['crypto_35',['crypto',['../main_8h.html#a44083ab75e428b2bc25232f11c2db3eb',1,'main.h']]]
+  ['channel_5fdac_30',['channel_DAC',['../adc_8h.html#aafc4060027875f8fe46242b0656d7814a1803faf8301d5aa442661259085ccd07',1,'adc.h']]],
+  ['channel_5ffvr_31',['channel_FVR',['../adc_8h.html#aafc4060027875f8fe46242b0656d7814aeffb75f5407ff8887f04e694210e231a',1,'adc.h']]],
+  ['channel_5ftemp_32',['channel_Temp',['../adc_8h.html#aafc4060027875f8fe46242b0656d7814ab7dd29210090fd58211f210334462325',1,'adc.h']]],
+  ['clear_5fwdt_33',['CLEAR_WDT',['../common_8h.html#af3b1b3d04cf04a55bc7003d003621565',1,'common.h']]],
+  ['coarse_5fcap_34',['coarse_cap',['../main_8h.html#a740ef1b33bb02cd952ad7d8708999472',1,'main.h']]],
+  ['coarse_5ftune_35',['coarse_tune',['../main_8h.html#a5c7c60c7d70cf76cc52e87722bb0f614',1,'main.h']]],
+  ['common_2eh_36',['common.h',['../common_8h.html',1,'']]],
+  ['correction_37',['correction',['../main_8h.html#ab19e6e081315a9a200394b74d10de395',1,'main.h']]],
+  ['crypto_38',['crypto',['../main_8h.html#a44083ab75e428b2bc25232f11c2db3eb',1,'main.h']]]
 ];

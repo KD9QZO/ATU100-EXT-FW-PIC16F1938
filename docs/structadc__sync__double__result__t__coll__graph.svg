@@ -10,7 +10,7 @@
 <title>adc_sync_double_result_t</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Result type of a double ADC conversion.">
 <polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-18.5 122,-18.5 122,-0.5 0,-0.5"/>
 <text text-anchor="middle" x="61" y="-7.3" font-family="Calibri" font-size="9.00">adc_sync_double_result_t</text>
 </a>

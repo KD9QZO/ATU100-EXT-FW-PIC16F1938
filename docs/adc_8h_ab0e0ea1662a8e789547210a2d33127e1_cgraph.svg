@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="mcc__generated__files_2adc_8c.html#a93877141ffb34f4b2090baab6554a001" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="adc_8c.html#a93877141ffb34f4b2090baab6554a001" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="110,-37.5 110,-55.5 247,-55.5 247,-37.5 110,-37.5"/>
 <text text-anchor="middle" x="178.5" y="-44.3" font-family="Calibri" font-size="9.00">ADC_DefaultInterruptHandler</text>
 </a>
@@ -31,7 +31,7 @@
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="mcc__generated__files_2adc_8c.html#a853bf4f29c400aa205e0474a03f64e32" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="adc_8c.html#a853bf4f29c400aa205e0474a03f64e32" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="119,-0.5 119,-18.5 238,-18.5 238,-0.5 119,-0.5"/>
 <text text-anchor="middle" x="178.5" y="-7.3" font-family="Calibri" font-size="9.00">ADC_SetInterruptHandler</text>
 </a>

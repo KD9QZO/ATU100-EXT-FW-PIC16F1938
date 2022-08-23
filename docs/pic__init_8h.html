@@ -125,8 +125,7 @@ $(document).ready(function(){initNavTree('pic__init_8h.html',''); initResizable(
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="pic__init_8h__dep__incl.svg" width="283" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="pic__init_8h__dep__incl.svg" width="283" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="pic__init_8h_source.html">Go to the source code of this file.</a></p>
@@ -492,39 +491,44 @@ Function Declarations</h2></td></tr>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    C1ON = 0; <span class="comment">// Disable comparators</span></div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    C2ON = 0;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    OSCCON = 0b01111000; <span class="comment">// 16 MHz oscillator</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    PORTA = 0;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    PORTB = 0;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    PORTC = 0;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    LATA = 0b01000000; <span class="comment">// PORT6 /Tx_req to 1</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    LATB = 0;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    LATC = 0;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    TRISA = 0b00000011;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    TRISB = 0b00000111;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    TRISC = 0b00000000; <span class="comment">//</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    ADC_Init();</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">#if 0</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    ADCON1.B0 = 1; <span class="comment">// ADC with the internal reference</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    ADCON1.B1 = 1;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    ADCON1bits.ADPREF0 = 1;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    ADCON1bits.ADPREF1 = 1;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    OPTION_REGbits.nWPUEN = 0;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    WPUBbits.WPUB0 = 1; <span class="comment">// PORTB0 Pull-up resistor</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    WPUBbits.WPUB1 = 1; <span class="comment">// PORTB1 Pull-up resistor</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    WPUBbits.WPUB2 = 1; <span class="comment">// PORTB2 Pull-up resistor</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="comment">//interrupt setting</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    GIE= 0;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="comment">// SCS FOSC; SPLLEN disabled; IRCF 16MHz_HF;</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    OSCCON = 0x78;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="comment">// TUN 0;</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    OSCTUNE = 0x00;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="comment">// SBOREN disabled;</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    BORCON = 0x00;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    PORTA = 0;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    PORTB = 0;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    PORTC = 0;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    LATA = 0b01000000; <span class="comment">// PORT6 /Tx_req to 1</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    LATB = 0;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    LATC = 0;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    TRISA = 0b00000011;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    TRISB = 0b00000111;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    TRISC = 0b00000000; <span class="comment">//</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    ADC_Init();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">#if 0</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    ADCON1.B0 = 1; <span class="comment">// ADC with the internal reference</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    ADCON1.B1 = 1;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    ADCON1bits.ADPREF0 = 1;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    ADCON1bits.ADPREF1 = 1;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    OPTION_REGbits.nWPUEN = 0;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    WPUBbits.WPUB0 = 1; <span class="comment">// PORTB0 Pull-up resistor</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    WPUBbits.WPUB1 = 1; <span class="comment">// PORTB1 Pull-up resistor</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    WPUBbits.WPUB2 = 1; <span class="comment">// PORTB2 Pull-up resistor</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="comment">//interrupt setting</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    GIE= 0;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>}</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="main_8c_source.html#l00175">main()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -532,8 +536,7 @@ Function Declarations</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="pic__init_8h_afc70164c232cee70941b16e3f2ca029a_icgraph.svg" width="172" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="pic__init_8h_afc70164c232cee70941b16e3f2ca029a_icgraph.svg" width="172" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -545,7 +548,7 @@ Function Declarations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="pic__init_8h.html">pic_init.h</a></li>
-    <li class="footer">Generated on Fri Apr 22 2022 11:24:54 for ATU100_PIC16F1938 by
+    <li class="footer">Generated on Sat Apr 23 2022 13:29:38 for ATU100_PIC16F1938 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.2 </li>
   </ul>

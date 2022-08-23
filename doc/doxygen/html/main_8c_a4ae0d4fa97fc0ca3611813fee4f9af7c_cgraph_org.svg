@@ -8,144 +8,147 @@
  viewBox="0.00 0.00 573.00 170.19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 166.194)">
 <title>show_pwr</title>
-<!-- Node264 -->
-<g id="node1" class="node"><title>Node264</title>
-<polygon fill="#bfbfbf" stroke="black" points="0,-69.7254 0,-87.7254 58,-87.7254 58,-69.7254 0,-69.7254"/>
-<text text-anchor="middle" x="29" y="-76.5254" font-family="Calibri" font-size="9.00">show_pwr</text>
-</g>
-<!-- Node265 -->
-<g id="node2" class="node"><title>Node265</title>
-<g id="a_node2"><a xlink:href="main_8c.html#a6911b3f075cdf1d54cb14f17f6e5ef6b" target="_top" xlink:title="lcd_ind">
-<polygon fill="none" stroke="black" points="94,-50.7254 94,-68.7254 141,-68.7254 141,-50.7254 94,-50.7254"/>
-<text text-anchor="middle" x="117.5" y="-57.5254" font-family="Calibri" font-size="9.00">lcd_ind</text>
+<!-- Node1 -->
+<g id="node1" class="node"><title>Node1</title>
+<g id="a_node1"><a xlink:title=" ">
+<polygon fill="#bfbfbf" stroke="black" points="0,-74.4684 0,-92.4684 58,-92.4684 58,-74.4684 0,-74.4684"/>
+<text text-anchor="middle" x="29" y="-81.2684" font-family="Calibri" font-size="9.00">show_pwr</text>
 </a>
 </g>
 </g>
-<!-- Node264&#45;&gt;Node265 -->
-<g id="edge1" class="edge"><title>Node264&#45;&gt;Node265</title>
-<path fill="none" stroke="midnightblue" d="M58.3233,-72.5041C66.5201,-70.7036 75.5322,-68.7241 83.9644,-66.8719"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="84.8522,-70.2604 93.8685,-64.6964 83.3504,-63.4234 84.8522,-70.2604"/>
-</g>
-<!-- Node266 -->
-<g id="node3" class="node"><title>Node266</title>
-<g id="a_node3"><a xlink:href="oled__control_8c.html#a9d56c6c2e653b24a0caf505492ad818a" target="_top" xlink:title="led_wr_str">
-<polygon fill="none" stroke="black" points="177,-69.7254 177,-87.7254 236,-87.7254 236,-69.7254 177,-69.7254"/>
-<text text-anchor="middle" x="206.5" y="-76.5254" font-family="Calibri" font-size="9.00">led_wr_str</text>
+<!-- Node2 -->
+<g id="node2" class="node"><title>Node2</title>
+<g id="a_node2"><a xlink:href="main_8c.html#a6911b3f075cdf1d54cb14f17f6e5ef6b" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="94,-55.4684 94,-73.4684 141,-73.4684 141,-55.4684 94,-55.4684"/>
+<text text-anchor="middle" x="117.5" y="-62.2684" font-family="Calibri" font-size="9.00">lcd_ind</text>
 </a>
 </g>
 </g>
-<!-- Node264&#45;&gt;Node266 -->
-<g id="edge14" class="edge"><title>Node264&#45;&gt;Node266</title>
-<path fill="none" stroke="midnightblue" d="M58.1971,-78.7254C87.5742,-78.7254 133.812,-78.7254 166.641,-78.7254"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="166.79,-82.2255 176.79,-78.7254 166.79,-75.2255 166.79,-82.2255"/>
+<!-- Node1&#45;&gt;Node2 -->
+<g id="edge1" class="edge"><title>Node1&#45;&gt;Node2</title>
+<path fill="none" stroke="midnightblue" d="M58.3233,-77.2471C66.5201,-75.4467 75.5322,-73.4672 83.9644,-71.615"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="84.8522,-75.0035 93.8685,-69.4395 83.3504,-68.1665 84.8522,-75.0035"/>
 </g>
-<!-- Node265&#45;&gt;Node266 -->
-<g id="edge2" class="edge"><title>Node265&#45;&gt;Node266</title>
-<path fill="none" stroke="midnightblue" d="M141.358,-64.7174C149.174,-66.4243 158.148,-68.3841 166.858,-70.2863"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="166.361,-73.7602 176.877,-72.4744 167.854,-66.9213 166.361,-73.7602"/>
-</g>
-<!-- Node267 -->
-<g id="node4" class="node"><title>Node267</title>
-<g id="a_node4"><a xlink:href="oled__control_8c.html#a7c3a2e5f1fed76dc27692132a2574d27" target="_top" xlink:title="oled_wr_str">
-<polygon fill="none" stroke="black" points="272,-88.7254 272,-106.725 337,-106.725 337,-88.7254 272,-88.7254"/>
-<text text-anchor="middle" x="304.5" y="-95.5254" font-family="Calibri" font-size="9.00">oled_wr_str</text>
+<!-- Node3 -->
+<g id="node3" class="node"><title>Node3</title>
+<g id="a_node3"><a xlink:href="oled__control_8c.html#a1c8eef09adf01c9a7e3c6188f25c3c48" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="177,-74.4684 177,-92.4684 236,-92.4684 236,-74.4684 177,-74.4684"/>
+<text text-anchor="middle" x="206.5" y="-81.2684" font-family="Calibri" font-size="9.00">led_wr_str</text>
 </a>
 </g>
 </g>
-<!-- Node266&#45;&gt;Node267 -->
-<g id="edge3" class="edge"><title>Node266&#45;&gt;Node267</title>
-<path fill="none" stroke="midnightblue" d="M236.043,-84.3745C244.147,-85.9785 253.142,-87.7586 261.852,-89.4826"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="261.388,-92.9584 271.877,-91.4666 262.747,-86.0916 261.388,-92.9584"/>
+<!-- Node1&#45;&gt;Node3 -->
+<g id="edge14" class="edge"><title>Node1&#45;&gt;Node3</title>
+<path fill="none" stroke="midnightblue" d="M58.1971,-83.4684C87.5742,-83.4684 133.812,-83.4684 166.641,-83.4684"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="166.79,-86.9685 176.79,-83.4684 166.79,-79.9685 166.79,-86.9685"/>
 </g>
-<!-- Node272 -->
-<g id="node9" class="node"><title>Node272</title>
-<g id="a_node9"><a xlink:href="oled__control_8c.html#ad25764a33e482f4e9db2701198e02551" target="_top" xlink:title="led_send">
-<polygon fill="none" stroke="black" points="277,-31.7254 277,-49.7254 332,-49.7254 332,-31.7254 277,-31.7254"/>
-<text text-anchor="middle" x="304.5" y="-38.5254" font-family="Calibri" font-size="9.00">led_send</text>
+<!-- Node2&#45;&gt;Node3 -->
+<g id="edge2" class="edge"><title>Node2&#45;&gt;Node3</title>
+<path fill="none" stroke="midnightblue" d="M141.358,-69.4605C149.174,-71.1674 158.148,-73.1272 166.858,-75.0294"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="166.361,-78.5032 176.877,-77.2175 167.854,-71.6644 166.361,-78.5032"/>
+</g>
+<!-- Node4 -->
+<g id="node4" class="node"><title>Node4</title>
+<g id="a_node4"><a xlink:href="oled__control_8c.html#a3d35666326cc069eda3b63c70983fdbc" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="277,-112.468 277,-130.468 332,-130.468 332,-112.468 277,-112.468"/>
+<text text-anchor="middle" x="304.5" y="-119.268" font-family="Calibri" font-size="9.00">led_send</text>
 </a>
 </g>
 </g>
-<!-- Node266&#45;&gt;Node272 -->
-<g id="edge10" class="edge"><title>Node266&#45;&gt;Node272</title>
-<path fill="none" stroke="midnightblue" d="M230.251,-69.7199C242.476,-64.8808 257.755,-58.8326 271.192,-53.514"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="272.57,-56.7328 280.58,-49.7979 269.994,-50.2241 272.57,-56.7328"/>
+<!-- Node3&#45;&gt;Node4 -->
+<g id="edge3" class="edge"><title>Node3&#45;&gt;Node4</title>
+<path fill="none" stroke="midnightblue" d="M230.251,-92.4739C242.476,-97.313 257.755,-103.361 271.192,-108.68"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="269.994,-111.97 280.58,-112.396 272.57,-105.461 269.994,-111.97"/>
 </g>
-<!-- Node268 -->
-<g id="node5" class="node"><title>Node268</title>
-<g id="a_node5"><a xlink:href="oled__control_8c.html#ab7f6b5c6c1483f6286f2de5786c028d9" target="_top" xlink:title="Soft_I2C_Start">
-<polygon fill="none" stroke="black" points="491,-126.725 491,-144.725 563,-144.725 563,-126.725 491,-126.725"/>
-<text text-anchor="middle" x="527" y="-133.525" font-family="Calibri" font-size="9.00">Soft_I2C_Start</text>
+<!-- Node8 -->
+<g id="node8" class="node"><title>Node8</title>
+<g id="a_node8"><a xlink:href="oled__control_8c.html#a6e85fd05697e2238e4d9babf1c952772" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="272,-55.4684 272,-73.4684 337,-73.4684 337,-55.4684 272,-55.4684"/>
+<text text-anchor="middle" x="304.5" y="-62.2684" font-family="Calibri" font-size="9.00">oled_wr_str</text>
 </a>
 </g>
 </g>
-<!-- Node267&#45;&gt;Node268 -->
-<g id="edge4" class="edge"><title>Node267&#45;&gt;Node268</title>
-<path fill="none" stroke="midnightblue" d="M312.588,-106.857C323.727,-120.372 346.783,-145.137 373,-154.725 413.036,-169.368 462.474,-158.438 494.12,-148.087"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="495.418,-151.342 503.735,-144.779 493.141,-144.722 495.418,-151.342"/>
+<!-- Node3&#45;&gt;Node8 -->
+<g id="edge7" class="edge"><title>Node3&#45;&gt;Node8</title>
+<path fill="none" stroke="midnightblue" d="M236.043,-77.8193C244.147,-76.2154 253.142,-74.4352 261.852,-72.7112"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="262.747,-76.1022 271.877,-70.7272 261.388,-69.2354 262.747,-76.1022"/>
 </g>
-<!-- Node269 -->
-<g id="node6" class="node"><title>Node269</title>
-<g id="a_node6"><a xlink:href="oled__control_8c.html#a73610916645f17c19124e697b005f694" target="_top" xlink:title="Soft_I2C_Write">
-<polygon fill="none" stroke="black" points="489,-88.7254 489,-106.725 565,-106.725 565,-88.7254 489,-88.7254"/>
-<text text-anchor="middle" x="527" y="-95.5254" font-family="Calibri" font-size="9.00">Soft_I2C_Write</text>
+<!-- Node5 -->
+<g id="node5" class="node"><title>Node5</title>
+<g id="a_node5"><a xlink:href="oled__control_8c.html#ab7f6b5c6c1483f6286f2de5786c028d9" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="491,-17.4684 491,-35.4684 563,-35.4684 563,-17.4684 491,-17.4684"/>
+<text text-anchor="middle" x="527" y="-24.2684" font-family="Calibri" font-size="9.00">Soft_I2C_Start</text>
 </a>
 </g>
 </g>
-<!-- Node267&#45;&gt;Node269 -->
-<g id="edge5" class="edge"><title>Node267&#45;&gt;Node269</title>
-<path fill="none" stroke="midnightblue" d="M337.092,-97.7254C374.166,-97.7254 436.001,-97.7254 478.776,-97.7254"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="478.944,-101.225 488.944,-97.7254 478.944,-94.2255 478.944,-101.225"/>
+<!-- Node4&#45;&gt;Node5 -->
+<g id="edge4" class="edge"><title>Node4&#45;&gt;Node5</title>
+<path fill="none" stroke="midnightblue" d="M332.078,-129.418C363.552,-137.154 416.322,-144.679 453,-121.468 484.583,-101.482 462.998,-72.3168 489,-45.4684 490.551,-43.8669 492.266,-42.3753 494.083,-40.9904"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="495.977,-43.9337 502.509,-35.5921 492.201,-38.0396 495.977,-43.9337"/>
 </g>
-<!-- Node270 -->
-<g id="node7" class="node"><title>Node270</title>
-<g id="a_node7"><a xlink:href="oled__control_8c.html#a6df77e8ec83c50ed6a5ddaf54aa3a9c2" target="_top" xlink:title="set_addressing">
-<polygon fill="none" stroke="black" points="373,-126.725 373,-144.725 453,-144.725 453,-126.725 373,-126.725"/>
-<text text-anchor="middle" x="413" y="-133.525" font-family="Calibri" font-size="9.00">set_addressing</text>
+<!-- Node6 -->
+<g id="node6" class="node"><title>Node6</title>
+<g id="a_node6"><a xlink:href="oled__control_8c.html#a16eb842aa672ca44820ae6d5f9933425" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="377.5,-93.4684 377.5,-111.468 448.5,-111.468 448.5,-93.4684 377.5,-93.4684"/>
+<text text-anchor="middle" x="413" y="-100.268" font-family="Calibri" font-size="9.00">Soft_I2C_Stop</text>
 </a>
 </g>
 </g>
-<!-- Node267&#45;&gt;Node270 -->
-<g id="edge6" class="edge"><title>Node267&#45;&gt;Node270</title>
-<path fill="none" stroke="midnightblue" d="M330.739,-106.731C344.565,-111.664 361.912,-117.853 377.024,-123.246"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="375.978,-126.589 386.573,-126.653 378.331,-119.996 375.978,-126.589"/>
+<!-- Node4&#45;&gt;Node6 -->
+<g id="edge5" class="edge"><title>Node4&#45;&gt;Node6</title>
+<path fill="none" stroke="midnightblue" d="M332.1,-116.723C342.785,-114.817 355.4,-112.566 367.411,-110.423"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="368.072,-113.861 377.302,-108.659 366.842,-106.97 368.072,-113.861"/>
 </g>
-<!-- Node271 -->
-<g id="node8" class="node"><title>Node271</title>
-<g id="a_node8"><a xlink:href="oled__control_8c.html#a16eb842aa672ca44820ae6d5f9933425" target="_top" xlink:title="Soft_I2C_Stop">
-<polygon fill="none" stroke="black" points="377.5,-50.7254 377.5,-68.7254 448.5,-68.7254 448.5,-50.7254 377.5,-50.7254"/>
-<text text-anchor="middle" x="413" y="-57.5254" font-family="Calibri" font-size="9.00">Soft_I2C_Stop</text>
+<!-- Node7 -->
+<g id="node7" class="node"><title>Node7</title>
+<g id="a_node7"><a xlink:href="oled__control_8c.html#a73610916645f17c19124e697b005f694" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="489,-55.4684 489,-73.4684 565,-73.4684 565,-55.4684 489,-55.4684"/>
+<text text-anchor="middle" x="527" y="-62.2684" font-family="Calibri" font-size="9.00">Soft_I2C_Write</text>
 </a>
 </g>
 </g>
-<!-- Node267&#45;&gt;Node271 -->
-<g id="edge9" class="edge"><title>Node267&#45;&gt;Node271</title>
-<path fill="none" stroke="midnightblue" d="M330.739,-88.7199C344.565,-83.7869 361.912,-77.5972 377.024,-72.205"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="378.331,-75.455 386.573,-68.7979 375.978,-68.8621 378.331,-75.455"/>
+<!-- Node4&#45;&gt;Node7 -->
+<g id="edge6" class="edge"><title>Node4&#45;&gt;Node7</title>
+<path fill="none" stroke="midnightblue" d="M320.019,-130.688C347.29,-146.742 407.517,-176.14 453,-154.468 484.045,-139.676 506.177,-104.514 517.459,-82.7782"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="520.704,-84.1117 521.994,-73.5957 514.427,-81.0115 520.704,-84.1117"/>
 </g>
-<!-- Node270&#45;&gt;Node268 -->
-<g id="edge7" class="edge"><title>Node270&#45;&gt;Node268</title>
-<path fill="none" stroke="midnightblue" d="M453.172,-135.725C462.064,-135.725 471.579,-135.725 480.701,-135.725"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="480.779,-139.225 490.779,-135.725 480.779,-132.225 480.779,-139.225"/>
+<!-- Node8&#45;&gt;Node5 -->
+<g id="edge11" class="edge"><title>Node8&#45;&gt;Node5</title>
+<path fill="none" stroke="midnightblue" d="M312.588,-55.3372C323.727,-41.8215 346.783,-17.0571 373,-7.46845 413.036,7.17429 462.474,-3.75588 494.12,-14.1072"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="493.141,-17.4715 503.735,-17.4146 495.418,-10.8521 493.141,-17.4715"/>
 </g>
-<!-- Node270&#45;&gt;Node269 -->
-<g id="edge8" class="edge"><title>Node270&#45;&gt;Node269</title>
-<path fill="none" stroke="midnightblue" d="M440.542,-126.72C455.22,-121.74 473.673,-115.479 489.671,-110.051"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="490.915,-113.325 499.26,-106.798 488.666,-106.696 490.915,-113.325"/>
+<!-- Node8&#45;&gt;Node6 -->
+<g id="edge12" class="edge"><title>Node8&#45;&gt;Node6</title>
+<path fill="none" stroke="midnightblue" d="M330.739,-73.4739C344.565,-78.407 361.912,-84.5966 377.024,-89.9888"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="375.978,-93.3317 386.573,-93.3959 378.331,-86.7389 375.978,-93.3317"/>
 </g>
-<!-- Node272&#45;&gt;Node268 -->
-<g id="edge11" class="edge"><title>Node272&#45;&gt;Node268</title>
-<path fill="none" stroke="midnightblue" d="M332.078,-32.7754C363.552,-25.04 416.322,-17.5146 453,-40.7254 484.583,-60.712 462.998,-89.877 489,-116.725 490.551,-118.327 492.266,-119.818 494.083,-121.203"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="492.201,-124.154 502.509,-126.602 495.977,-118.26 492.201,-124.154"/>
+<!-- Node8&#45;&gt;Node7 -->
+<g id="edge13" class="edge"><title>Node8&#45;&gt;Node7</title>
+<path fill="none" stroke="midnightblue" d="M337.092,-64.4684C374.166,-64.4684 436.001,-64.4684 478.776,-64.4684"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="478.944,-67.9685 488.944,-64.4684 478.944,-60.9685 478.944,-67.9685"/>
 </g>
-<!-- Node272&#45;&gt;Node269 -->
-<g id="edge12" class="edge"><title>Node272&#45;&gt;Node269</title>
-<path fill="none" stroke="midnightblue" d="M320.019,-31.5056C347.29,-15.4519 407.517,13.9465 453,-7.72536 484.045,-22.5177 506.177,-57.6799 517.459,-79.4157"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="514.427,-81.1823 521.994,-88.5981 520.704,-78.0822 514.427,-81.1823"/>
+<!-- Node9 -->
+<g id="node9" class="node"><title>Node9</title>
+<g id="a_node9"><a xlink:href="oled__control_8c.html#a3cf32ac4d3d7c92be54c385c1ed8cc76" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="373,-17.4684 373,-35.4684 453,-35.4684 453,-17.4684 373,-17.4684"/>
+<text text-anchor="middle" x="413" y="-24.2684" font-family="Calibri" font-size="9.00">set_addressing</text>
+</a>
 </g>
-<!-- Node272&#45;&gt;Node271 -->
-<g id="edge13" class="edge"><title>Node272&#45;&gt;Node271</title>
-<path fill="none" stroke="midnightblue" d="M332.1,-45.4709C342.785,-47.3772 355.4,-49.6277 367.411,-51.7704"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="366.842,-55.2243 377.302,-53.5351 368.072,-48.3331 366.842,-55.2243"/>
+</g>
+<!-- Node8&#45;&gt;Node9 -->
+<g id="edge8" class="edge"><title>Node8&#45;&gt;Node9</title>
+<path fill="none" stroke="midnightblue" d="M330.739,-55.463C344.565,-50.5299 361.912,-44.3403 377.024,-38.9481"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="378.331,-42.198 386.573,-35.541 375.978,-35.6051 378.331,-42.198"/>
+</g>
+<!-- Node9&#45;&gt;Node5 -->
+<g id="edge9" class="edge"><title>Node9&#45;&gt;Node5</title>
+<path fill="none" stroke="midnightblue" d="M453.172,-26.4684C462.064,-26.4684 471.579,-26.4684 480.701,-26.4684"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="480.779,-29.9685 490.779,-26.4684 480.779,-22.9685 480.779,-29.9685"/>
+</g>
+<!-- Node9&#45;&gt;Node7 -->
+<g id="edge10" class="edge"><title>Node9&#45;&gt;Node7</title>
+<path fill="none" stroke="midnightblue" d="M440.542,-35.4739C455.22,-40.4539 473.673,-46.7146 489.671,-52.1427"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="488.666,-55.4973 499.26,-55.3959 490.915,-48.8685 488.666,-55.4973"/>
 </g>
 </g>
 </svg>

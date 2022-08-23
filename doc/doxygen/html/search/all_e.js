@@ -1,10 +1,14 @@
 var searchData=
 [
-  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['relay_5fdelay_5fms_1',['relay_delay_ms',['../main_8h.html#a99373ea480967e453f9ff13f83873af5',1,'relay_delay_ms():&#160;main.c'],['../main_8c.html#a99373ea480967e453f9ff13f83873af5',1,'relay_delay_ms():&#160;main.c']]],
-  ['relay_5foff_2',['Relay_off',['../main_8h.html#a25bed9fc2fe113fb237d9ac31d8fdc66',1,'main.h']]],
-  ['restart_3',['Restart',['../main_8c.html#a7d6bddab157c8975799910f2e9e8bae8',1,'main.c']]],
-  ['rready_4',['rready',['../main_8h.html#ac213f4d41746910afc9cb31bb97dbca6',1,'main.h']]],
-  ['rs_5',['RS',['../oled__control_8h.html#a17f5d6f875e7b06b6813dc24d8cc72f1',1,'oled_control.h']]],
-  ['rw_6',['RW',['../oled__control_8h.html#af648dedb37c5b78b5f259c54131d4f5d',1,'oled_control.h']]]
+  ['p_5fcnt_0',['p_cnt',['../main_8h.html#a90b96cf1e446abc8436315a16fd4e986',1,'main.h']]],
+  ['p_5fhigh_1',['P_High',['../main_8h.html#a637b681e083f7833bc202b2c735855e5',1,'main.h']]],
+  ['p_5fmax_2',['P_max',['../main_8h.html#aca6f61975afb29b3d959dcc514d40d06',1,'main.h']]],
+  ['p_5ftx_3',['p_Tx',['../pic__init_8h.html#aa12251a8b42282373916a5247eea4142',1,'pic_init.h']]],
+  ['pic_5finit_4',['pic_init',['../pic__init_8h.html#afc70164c232cee70941b16e3f2ca029a',1,'pic_init(void):&#160;pic_init.c'],['../pic__init_8c.html#afc70164c232cee70941b16e3f2ca029a',1,'pic_init(void):&#160;pic_init.c']]],
+  ['pic_5finit_2ec_5',['pic_init.c',['../pic__init_8c.html',1,'']]],
+  ['pic_5finit_2eh_6',['pic_init.h',['../pic__init_8h.html',1,'']]],
+  ['power_7',['Power',['../main_8c.html#af86685d260bf1b9f92bec64bdac8df49',1,'main.c']]],
+  ['power_5fold_8',['Power_old',['../main_8c.html#a668ae783892fce98cd55a8f1b14fa281',1,'main.c']]],
+  ['preprocessor_2eh_9',['preprocessor.h',['../preprocessor_8h.html',1,'']]],
+  ['pwr_10',['PWR',['../main_8h.html#a48013959e4efe5cfb4a8ff4f596def44',1,'main.h']]]
 ];

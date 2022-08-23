@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['eeprom_5faddr_5ft_0',['eeprom_addr_t',['../group__eeprom__addr__map.html#ga3902cc54aafcfa9fd76a026adeedac72',1,'eeprom_map.h']]]
+  ['display_5ftype_5ft_0',['display_type_t',['../extratypes_8h.html#a0371ce8588bab14349e8e19dea2473e1',1,'extratypes.h']]]
 ];

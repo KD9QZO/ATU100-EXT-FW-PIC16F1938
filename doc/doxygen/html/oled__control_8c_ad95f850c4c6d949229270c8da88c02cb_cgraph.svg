@@ -18,7 +18,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="oled__control_8c.html#ad141ed038278a6fcad6c307932f01ec8" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="oled__control_8c.html#a78a346ba6e89c3140dd554a46e56c719" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="90,-21.6541 90,-39.6541 171,-39.6541 171,-21.6541 90,-21.6541"/>
 <text text-anchor="middle" x="130.5" y="-28.4541" font-family="Calibri" font-size="9.00">send_command</text>
 </a>
@@ -70,7 +70,7 @@
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
-<g id="a_node6"><a xlink:href="oled__control_8c.html#a6df77e8ec83c50ed6a5ddaf54aa3a9c2" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="oled__control_8c.html#a3cf32ac4d3d7c92be54c385c1ed8cc76" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="90.5,-97.6541 90.5,-115.654 170.5,-115.654 170.5,-97.6541 90.5,-97.6541"/>
 <text text-anchor="middle" x="130.5" y="-104.454" font-family="Calibri" font-size="9.00">set_addressing</text>
 </a>

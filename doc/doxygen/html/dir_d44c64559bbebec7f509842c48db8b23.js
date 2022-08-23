@@ -1,5 +1,6 @@
 var dir_d44c64559bbebec7f509842c48db8b23 =
 [
+    [ "adc.h", "adc_8h.html", "adc_8h" ],
     [ "common.h", "common_8h.html", "common_8h" ],
     [ "eeprom_map.h", "eeprom__map_8h.html", "eeprom__map_8h" ],
     [ "extratypes.h", "extratypes_8h.html", "extratypes_8h" ],
